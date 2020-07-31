@@ -1,7 +1,28 @@
 <template>
   <div id="app">
-    <router-view />
+    <navbar></navbar>
+    <main class="container">
+      <router-view />
+    </main>
   </div>
 </template>
 
-<style lang="scss"></style>
+<script>
+import Navbar from './components/Navbar';
+
+export default {
+  name: 'app',
+  data: function() {
+    return {};
+  },
+  components: {
+    navbar: Navbar,
+  },
+};
+</script>
+
+<style lang="scss">
+body {
+  background-color: #fafafa;
+}
+</style>
