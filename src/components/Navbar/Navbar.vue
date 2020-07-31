@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
     <div class="container">
       <a class="navbar-brand brand-name" href="/">Instagram</a>
       <button
@@ -35,7 +35,7 @@
             <img :src="feature.imgSrc" :alt="feature.title" />
           </a>
           <a href="/profile" class="icon" title="Profile">
-            <img src="./../assets/me.jpg" class="profile-img" alt="profile" />
+            <img src="./../../assets/me.jpg" class="profile-img" alt="profile" />
           </a>
         </div>
       </div>
@@ -75,12 +75,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './.././style/settings.scss';
+@import './../../style/settings.scss';
 
 .brand-name {
   font-size: $brand-fz;
   color: $main-color;
   font-family: 'Pacifico', cursive;
+
   &:hover {
     color: $main-color;
   }
@@ -100,6 +101,7 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
