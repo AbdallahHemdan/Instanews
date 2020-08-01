@@ -2,12 +2,33 @@
   <div class="post">
     <div class="upper">
       <img src="./../../assets/me.jpg" alt="owner" class="owner-img" />
-      <a href="/adidas" class="post-owner align-middle">
+      <a href="/profile" class="post-owner align-middle">
         <span>{{ post.creator }}</span>
       </a>
-      <button class="dots-menu">
+      <button class="dots-menu" data-toggle="modal" data-target="#exampleModalCenter">
         <span class="dots">●●●</span>
       </button>
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="post-modal-choice danger-choice">Report Inappropriate</button>
+              <button class="post-modal-choice danger-choice">Unfollow</button>
+              <button class="post-modal-choice">Go to post</button>
+              <button class="post-modal-choice lst-choice" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">Cancel</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="main-img">
       <img
@@ -46,11 +67,13 @@ export default {
 .upper {
   padding: 10px 15px;
 }
+
 .owner-img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
+
 .post-owner {
   margin-left: 10px;
   color: #007bff;
@@ -58,6 +81,7 @@ export default {
   font-weight: 600;
   letter-spacing: 2px;
 }
+
 .post-owner:hover {
   text-decoration: none;
   color: #007bff;
@@ -86,11 +110,13 @@ export default {
 .interact {
   padding: 5px 10px;
 }
+
 .no-btn {
   border: none;
   background: transparent;
   margin-right: 10px;
 }
+
 .no-btn:focus {
   outline: none;
 }
@@ -98,6 +124,7 @@ export default {
 .save-post {
   float: right;
 }
+
 .likes-no {
   padding: 15px 15px 0 15px;
   font-weight: 600;
@@ -106,9 +133,11 @@ export default {
 .post-description {
   font-size: 14px;
 }
+
 .post-description {
   padding: 0 15px;
 }
+
 .post-owner-name,
 .comment-owner-name {
   font-weight: 600;
@@ -130,5 +159,37 @@ export default {
 
 .like-comment-icon {
   float: right;
+}
+
+.post-modal-choice {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+  font-size: 1rem;
+
+  &:hover {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+}
+
+.modal-content {
+  border-radius: 20px;
+  width: 85%;
+  margin: auto;
+}
+
+.danger-choice {
+  color: red;
+  font-weight: 700;
+}
+
+.lst-choice {
+  border-bottom: none;
 }
 </style>
