@@ -1,10 +1,10 @@
 <template>
-  <div class="home-container">
+  <div class="home-container container">
     <div class="left-content">
       <newsfeed></newsfeed>
     </div>
     <div class="right-content" id="sidebar">
-      <h1>Right</h1>
+      <user-suggestions></user-suggestions>
     </div>
   </div>
 </template>
@@ -17,6 +17,7 @@ export default {
   },
   components: {
     newsfeed: () => import('./../components/Newsfeed/Newsfeed'),
+    'user-suggestions': () => import('./../components/UserSuggestions/UserSuggestions'),
   },
 };
 </script>
@@ -32,7 +33,6 @@ export default {
   position: fixed;
   left: 62%;
   width: 40%;
-  padding-left: 35px;
 }
 
 @media (max-width: 768px) {
