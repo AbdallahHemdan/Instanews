@@ -1,2 +1,8 @@
 $main-color: #007bff;
 $brand-fz: 24px;
+
+body {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
