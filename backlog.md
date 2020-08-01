@@ -8,5 +8,6 @@
 - [x] Create Main-Page structure (Newsfeed + Suggestion section)
 - [x] Create Newsfeed wrapper
 - [ ] Create post component
+- [ ] Create post-options modal component
 - [ ] Create comments wrapper
 - [ ] Create comment component
