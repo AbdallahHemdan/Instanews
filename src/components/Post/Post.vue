@@ -1,7 +1,7 @@
 <template>
   <div class="post">
     <div class="upper">
-      <img src="./../../assets/me.jpg" alt="owner" class="owner-img" />
+      <img src="./../../assets/me.jpg" alt="owner" class="owner-img" draggable="false" />
       <a href="/profile" class="post-owner align-middle">
         <span>{{ post.creator }}</span>
       </a>
@@ -35,6 +35,7 @@
         :src="post.mainImg"
         alt="main post"
         class="post-img"
+        draggable="false"
         onDoubleClick="{this.handleLikePost}"
       />
     </div>
