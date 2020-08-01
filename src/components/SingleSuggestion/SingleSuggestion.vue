@@ -22,9 +22,6 @@ export default {
       requires: true,
     },
   },
-  created: function() {
-    console.log(this.user);
-  },
 };
 </script>
 
@@ -58,5 +55,10 @@ export default {
 .relation {
   color: #8e8e8e;
   font-size: 80%;
+}
+
+.user-name {
+  display: flex;
+  flex-direction: column;
 }
 </style>
