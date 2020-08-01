@@ -4,6 +4,9 @@
     <suggestion-header></suggestion-header>
     <single-suggestion v-for="(user, index) in usersToSuggest" :key="index" :user="user">
     </single-suggestion>
+    <div class="right-footer">
+      ALL RIGHTS RECEIVED <a href="https://github.com/AbdallahHemdan">HEMDAN</a> &copy; 2020
+    </div>
   </div>
 </template>
 
@@ -38,14 +41,14 @@ export default {
           userImg:
             'https://instagram.fcai19-2.fna.fbcdn.net/v/t51.2885-19/s150x150/74670561_705013450006616_4647295489199308800_n.jpg?_nc_ht=instagram.fcai19-2.fna.fbcdn.net&_nc_ohc=fS-fqa3z9ykAX_RKjW3&oh=97353b9c3fae178aa7c21fde7fde545c&oe=5F50C4C2',
           username: 'ranaelkaliouby',
-          suggestionBase: 'popular',
+          suggestionBase: 'New to Instagram',
           id: '4',
         },
         {
           userImg:
             'https://instagram.fcai19-2.fna.fbcdn.net/v/t51.2885-19/s150x150/91243337_531392880852319_3226176362406477824_n.jpg?_nc_ht=instagram.fcai19-2.fna.fbcdn.net&_nc_ohc=AYMkonaFslkAX-Ym_As&oh=7ba5f51682ae9b4818ee222f3f7158ea&oe=5F50477B',
           username: 'amr.sherif.adel',
-          suggestionBase: 'popular',
+          suggestionBase: 'Follows you',
           id: '5',
         },
         {
@@ -68,4 +71,16 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.right-footer {
+  float: left;
+  margin-top: 2rem;
+  font-size: 15px;
+  color: #999;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+</style>
