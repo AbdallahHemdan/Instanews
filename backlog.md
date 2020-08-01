@@ -7,7 +7,9 @@
 - [x] Add Navbar
 - [x] Create Main-Page structure (Newsfeed + Suggestion section)
 - [x] Create Newsfeed wrapper
-- [ ] Create post component
-- [ ] Create post-options modal component
+- [x] Create post component
+- [x] Create post-options modal component
+- [x] Create User-Info component in Home-Page
+- [x] Create User-Suggestion component in Home-Page
 - [ ] Create comments wrapper
 - [ ] Create comment component
