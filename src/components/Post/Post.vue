@@ -32,13 +32,14 @@
     </div>
     <div class="main-img">
       <img
-        :src="post.mainImg"
-        alt="main post"
         class="post-img"
+        alt="main post"
         draggable="false"
+        :src="post.mainImg"
         onDoubleClick="{this.handleLikePost}"
       />
     </div>
+    <post-action></post-action>
   </div>
 </template>
 
@@ -55,13 +56,16 @@ export default {
       required: true,
     },
   },
+  components: {
+    'post-action': () => import('./../PostAction/PostAction'),
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .post {
   background: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 2rem;
   border: 1px solid #c9c7c7;
 }
 
