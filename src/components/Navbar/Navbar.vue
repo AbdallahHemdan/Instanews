@@ -24,7 +24,7 @@
             aria-label="Search"
           />
         </form>
-        <div class="right-part  options-list">
+        <div class="right-part options-list">
           <a
             class="icon"
             v-for="(feature, index) in features"
@@ -34,9 +34,41 @@
           >
             <img :src="feature.imgSrc" :alt="feature.title" />
           </a>
-          <a href="/profile" class="icon" title="Profile">
+          <div class="dropdown profile-options">
+            <a
+              class="dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="./../../assets/me.jpg" class="profile-img" alt="profile" />
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="/profile">
+                <img src="./../../assets/svgs/avatar.svg" alt="avatar image" class="drop-icon" />
+                Profile
+              </a>
+              <a class="dropdown-item" href="/profile/saved">
+                <img src="./../../assets/svgs/unsaved.svg" alt="saved icon" class="drop-icon" />
+                Saved
+              </a>
+              <a class="dropdown-item" href="/profile/settings">
+                <img src="./../../assets/svgs/settings.svg" alt="settings icon" class="drop-icon" />
+                Settings
+              </a>
+              <div class="logout">
+                <a class="dropdown-item" href="/">
+                  <img src="./../../assets/svgs/logout.svg" alt="logout icon" class="drop-icon" />
+                  Log Out
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="/profile" class="icon" title="Profile">
             <img src="./../../assets/me.jpg" class="profile-img" alt="profile" />
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -100,6 +132,7 @@ export default {
 }
 
 .options-list {
+  display: flex;
   @media (max-width: 992px) {
     display: flex;
     flex-direction: row;
@@ -165,5 +198,37 @@ export default {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+.profile-options {
+  margin-left: 10px;
+}
+
+.dropdown-menu {
+  min-width: 14rem;
+  padding: 0.5rem 0 0;
+  margin: 0.5rem 0 0;
+}
+
+.drop-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logout {
+  display: flex;
+  border-top: 1px solid #dbdbdb;
+  & > a {
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 </style>
