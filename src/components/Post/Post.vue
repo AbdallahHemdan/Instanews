@@ -40,6 +40,9 @@
       />
     </div>
     <post-action></post-action>
+    <div class="post-likes">78 likes</div>
+    <post-description :writer="post.creator" :description="post.description"></post-description>
+    <post-comments :comments="comments"></post-comments>
   </div>
 </template>
 
@@ -55,9 +58,15 @@ export default {
       type: Object,
       required: true,
     },
+    comments: {
+      type: Array,
+      required: true,
+    },
   },
   components: {
     'post-action': () => import('./../PostAction/PostAction'),
+    'post-description': () => import('./../PostDescription/PostDescription'),
+    'post-comments': () => import('./../Comments/Comments'),
   },
 };
 </script>
@@ -196,5 +205,10 @@ export default {
 
 .lst-choice {
   border-bottom: none;
+}
+
+.post-likes {
+  padding-left: 1rem;
+  font-weight: 600;
 }
 </style>
