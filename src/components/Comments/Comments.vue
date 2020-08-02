@@ -71,6 +71,24 @@ export default {
       &:focus {
         outline: none;
       }
+
+      &::-webkit-input-placeholder {
+        color: #999;
+      }
+
+      &:-moz-placeholder {
+        /* Firefox 18- */
+        color: #999;
+      }
+
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #999;
+      }
+
+      &:-ms-input-placeholder {
+        color: #999;
+      }
     }
 
     .post-btn {

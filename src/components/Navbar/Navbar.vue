@@ -20,7 +20,7 @@
           <input
             class="search"
             type="search"
-            placeholder=" Search Instagram ... "
+            placeholder="Search Instagram ... "
             aria-label="Search"
           />
         </form>
@@ -120,12 +120,44 @@ export default {
     width: 100%;
   }
 
-  &:placeholder {
+  &::-webkit-input-placeholder {
     text-align: center;
+    font-size: 14px;
+  }
+
+  &:-moz-placeholder {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  &::-moz-placeholder {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  &:-ms-input-placeholder {
+    text-align: center;
+    font-size: 14px;
   }
 
   &:focus {
     outline: none;
+
+    &::-webkit-input-placeholder {
+      text-align: left;
+    }
+
+    &:-moz-placeholder {
+      text-align: left;
+    }
+
+    &::-moz-placeholder {
+      text-align: left;
+    }
+
+    &:-ms-input-placeholder {
+      text-align: left;
+    }
   }
 }
 
