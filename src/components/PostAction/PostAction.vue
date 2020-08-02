@@ -2,18 +2,18 @@
   <div class="interact">
     <div class="left">
       <a class="no-btn like-post">
-        <img :src="likedImg" class="icon" @click="changeLikeState" />
+        <img :src="likedImg" class="icon" @click="changeLikeState" draggable="false" />
       </a>
       <a class="no-btn comment-post">
-        <img src="./../../assets/svgs/comment.svg" alt="comment" class="icon" />
+        <img src="./../../assets/svgs/comment.svg" alt="comment" class="icon" draggable="false" />
       </a>
       <a class="no-btn share-post">
-        <img src="./../../assets/svgs/share.svg" alt="share" class="icon" />
+        <img src="./../../assets/svgs/share.svg" alt="share" class="icon" draggable="false" />
       </a>
     </div>
     <div class="right">
       <a class="no-btn save-post" @click="changeSaveState">
-        <img :src="savedImg" alt="saved" class="icon" />
+        <img :src="savedImg" alt="saved" class="icon" draggable="false" />
       </a>
     </div>
   </div>
