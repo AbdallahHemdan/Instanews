@@ -27,6 +27,6 @@ body {
 }
 
 .main-page {
-  margin-top: 7rem;
+  margin-top: 92px;
 }
 </style>
