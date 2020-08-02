@@ -39,7 +39,7 @@ export default {
 
 .sub-name {
   font-size: 0.8rem;
-  color: #212529;
+  color: #999;
 }
 .user-img {
   width: 50px;

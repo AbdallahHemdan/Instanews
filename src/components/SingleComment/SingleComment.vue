@@ -65,4 +65,8 @@ export default {
   width: 16px;
   height: 16px;
 }
+
+.like-action {
+  padding-left: 5px;
+}
 </style>

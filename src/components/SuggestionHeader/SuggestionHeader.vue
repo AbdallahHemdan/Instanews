@@ -16,8 +16,8 @@ export default {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 
   .title {
     color: #8e8e8e;
@@ -27,6 +27,7 @@ export default {
 
   .see-all {
     text-decoration: none;
+    color: #000;
   }
 }
 </style>

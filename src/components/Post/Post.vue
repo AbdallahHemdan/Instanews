@@ -74,17 +74,18 @@ export default {
 <style lang="scss" scoped>
 .post {
   background: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 60px;
   border: 1px solid #c9c7c7;
 }
 
 .upper {
   padding: 10px 15px;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .owner-img {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 }
 

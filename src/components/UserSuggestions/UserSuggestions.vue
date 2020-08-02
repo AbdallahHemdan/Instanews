@@ -75,6 +75,7 @@ export default {
 .right-footer {
   float: left;
   margin-top: 2rem;
+  margin-left: 8px;
   font-size: 15px;
   color: #999;
   text-align: center;
