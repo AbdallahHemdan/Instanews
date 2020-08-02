@@ -14,4 +14,7 @@
 - [x] Create User-Suggestion component in Home-Page
 - [x] Create user-post-action icons with their functionality
 - [x] Create comments wrapper
-- [ ] Create comment component
+- [x] Create comment component
+- [x] Create Add-Comment form
+- [x] Add likes, post-time component
+- [x] Add Profile-options dropdown
