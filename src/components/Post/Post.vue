@@ -87,6 +87,9 @@ export default {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #ffff;
+  padding: 1px;
 }
 
 .post-owner {
