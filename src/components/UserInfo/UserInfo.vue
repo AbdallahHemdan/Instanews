@@ -45,8 +45,9 @@ export default {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #ccc;
-  border: 2px solid #fafafa;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  padding: 2px;
   margin-right: 15px;
 }
 </style>
