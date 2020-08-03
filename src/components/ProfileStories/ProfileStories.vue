@@ -66,6 +66,7 @@ export default {
     flex-direction: column;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    cursor: pointer;
 
     @media (max-width: 576px) {
       margin-left: 0;
@@ -83,6 +84,7 @@ export default {
 
     .story-title {
       color: $main-color;
+      font-weight: 400;
     }
   }
 }
