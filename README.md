@@ -83,6 +83,69 @@ $ npm run build
 npm run test:unit
 ```
 
+<div align="left">
+  
+## File Structure
+
+ 
+```md                                   
+Instanews
+├── README.md
+├── LICENSE
+├── package-lock.json
+├── package.json
+├── jest.config.js
+├── backlog.md
+├── babel.config.js
+├── .gitignore
+├── .browserslistrc
+├── tests
+│   └── unit
+├── src
+│   ├── assets
+│   ├── components
+|   |   ├── Comments
+|   |   ├── InboxContainer	
+|   |   ├── LeftAuth	
+|   |   ├── MessageItem	
+|   |   ├── MessagesContainer	
+|   |   ├── Navbar	
+|   |   ├── Newsfeed	
+|   |   ├── NotificationItem	
+|   |   ├── NotificationsDropdown	
+|   |   ├── OrDivider	
+|   |   ├── Post	
+|   |   ├── PostAction	
+|   |   ├── PostDescription	
+|   |   ├── ProfileDescription	
+|   |   ├── ProfileDropdown	
+|   |   ├── ProfileGallery	
+|   |   ├── ProfileGalleryItem	
+|   |   ├── ProfileHeader
+|   |   ├── ProfileStories
+|   |   ├── ProfileUpperHeader
+|   |   ├── SingleComment
+|   |   ├── SingleSuggestion
+|   |   ├── SuggestionHeader
+|   |   ├── UserInfo
+|   |   ├── UserSuggestions
+|   |   └── ProfileHeaderTitle
+│   ├── mock
+│   ├── router
+│   ├── store
+│   ├── style
+│   ├── views
+│   ├── main.js
+│   └── App.vue
+├── public
+│   ├── favicon.ico	
+│   └── index.html	
+├── node_modules
+└── CONTRIBUTING.md	
+``` 
+
+</div>
+
 ### Screenshots
 
 <div align="center">
@@ -162,67 +225,6 @@ npm run test:unit
 <br />
 
 
-## File Structure
- 
-<div align="left">
- 
-```md                                   
-Instanews
-├── README.md
-├── LICENSE
-├── package-lock.json
-├── package.json
-├── jest.config.js
-├── backlog.md
-├── babel.config.js
-├── .gitignore
-├── .browserslistrc
-├── tests
-│   └── unit
-├── src
-│   ├── assets
-│   ├── components
-|   |   ├── Comments
-|   |   ├── InboxContainer	
-|   |   ├── LeftAuth	
-|   |   ├── MessageItem	
-|   |   ├── MessagesContainer	
-|   |   ├── Navbar	
-|   |   ├── Newsfeed	
-|   |   ├── NotificationItem	
-|   |   ├── NotificationsDropdown	
-|   |   ├── OrDivider	
-|   |   ├── Post	
-|   |   ├── PostAction	
-|   |   ├── PostDescription	
-|   |   ├── ProfileDescription	
-|   |   ├── ProfileDropdown	
-|   |   ├── ProfileGallery	
-|   |   ├── ProfileGalleryItem	
-|   |   ├── ProfileHeader
-|   |   ├── ProfileStories
-|   |   ├── ProfileUpperHeader
-|   |   ├── SingleComment
-|   |   ├── SingleSuggestion
-|   |   ├── SuggestionHeader
-|   |   ├── UserInfo
-|   |   ├── UserSuggestions
-|   |   └── ProfileHeaderTitle
-│   ├── mock
-│   ├── router
-│   ├── store
-│   ├── style
-│   ├── views
-│   ├── main.js
-│   └── App.vue
-├── public
-│   ├── favicon.ico	
-│   └── index.html	
-├── node_modules
-└── CONTRIBUTING.md	
-``` 
-
-</div>
 <h3 align="center">Forget Password Page</h3>
 
 ![image](https://user-images.githubusercontent.com/40190772/89169706-dab34a00-d57e-11ea-99f7-66eaf0cbd7a3.png)
@@ -247,6 +249,7 @@ Instanews
 <hr />
 
 ![image](https://user-images.githubusercontent.com/40190772/89172022-434ff600-d582-11ea-8d03-e7c15fc878d9.png)
+
 
 
 ## Contributing
