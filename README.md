@@ -54,7 +54,7 @@
 1. **_Clone the repository_**
 
 ```sh
-$ git clone https://github.com/AbdallahHemdan/Instagram.git
+$ git clone https://github.com/AbdallahHemdan/Instanews.git
 ```
 2. **_Navigate to repository directory_**
 ```sh
