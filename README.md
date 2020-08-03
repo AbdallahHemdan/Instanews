@@ -167,6 +167,11 @@ Instanews
 
 ![image](https://user-images.githubusercontent.com/40190772/89172160-798d7580-d582-11ea-9a17-36fa05c963bb.png)
 
+<hr />
+
+![home](https://user-images.githubusercontent.com/40190772/89176797-7c8c6400-d58a-11ea-8da0-fb2707fa091c.gif)
+
+
 <br />
 
 <h3 align="center">Profile Page</h3>
