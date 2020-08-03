@@ -1,4 +1,4 @@
-# Instagram
+# Instanews
 
 > List of tasks should I finish in the project
 

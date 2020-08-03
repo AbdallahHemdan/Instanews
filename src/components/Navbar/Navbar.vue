@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white insta-nav">
     <div class="container">
-      <a class="navbar-brand brand-name" href="/">Instagram</a>
+      <a class="navbar-brand brand-name" href="/">Instanews</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -20,7 +20,7 @@
           <input
             class="search"
             type="search"
-            placeholder="Search Instagram ... "
+            placeholder="Search Instanews ... "
             aria-label="Search"
           />
         </form>
