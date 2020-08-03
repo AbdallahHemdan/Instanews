@@ -28,18 +28,14 @@
   - [Installation](#installation)
   - [Running](#running)
 - [Screenshots](#screenshots)
-- [Videos](#videos)
+- [Responsive Sreenshots](#responsive-screenshots)
 - [File Structure](#file-structure)
-- [Unit Testing](#unit-testing)
-  - [Running Unit tests](#running-unit-tests)
-  - [Generating Coverage Report](#generating-coverage-report)
-- [Functional Documentation](#functional-documentation)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
 - [License](#license)
 
 ## About
-> Instanew is a soical media app which is a mimic for [Instagram](https://www.instagram.com/) built using [Vuejs](https://vuejs.org/).
+> Instanew is a fully responsive soical media app which is a mimic for [Instagram](https://www.instagram.com/) built using [Vuejs](https://vuejs.org/).
 
 ### Build with
 - [Vye JS](https://vuejs.org/)
@@ -102,6 +98,10 @@ npm run test:unit
 
 ![image](https://user-images.githubusercontent.com/40190772/89168493-3d0b4b00-d57d-11ea-9dda-45d8299c751d.png)
 
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89172160-798d7580-d582-11ea-9a17-36fa05c963bb.png)
+
 <br />
 
 <h3 align="center">Profile Page</h3>
@@ -160,7 +160,109 @@ npm run test:unit
 
 <br />
 
+
+## File Structure
+                                    
+    Instanews
+    ├── README.md
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    ├── jest.config.js
+    ├── backlog.md
+    ├── babel.config.js
+    ├── .gitignore
+    ├── .browserslistrc
+    ├── tests
+    │   └── unit
+    ├── src
+    │   ├── assets
+    │   ├── components
+    |   |   ├── Comments
+    |   |   ├── InboxContainer	
+    |   |   ├── LeftAuth	
+    |   |   ├── MessageItem	
+    |   |   ├── MessagesContainer	
+    |   |   ├── Navbar	
+    |   |   ├── Newsfeed	
+    |   |   ├── NotificationItem	
+    |   |   ├── NotificationsDropdown	
+    |   |   ├── OrDivider	
+    |   |   ├── Post	
+    |   |   ├── PostAction	
+    |   |   ├── PostDescription	
+    |   |   ├── ProfileDescription	
+    |   |   ├── ProfileDropdown	
+    |   |   ├── ProfileGallery	
+    |   |   ├── ProfileGalleryItem	
+    |   |   ├── ProfileHeader
+    |   |   ├── ProfileStories
+    |   |   ├── ProfileUpperHeader
+    |   |   ├── SingleComment
+    |   |   ├── SingleSuggestion
+    |   |   ├── SuggestionHeader
+    |   |   ├── UserInfo
+    |   |   ├── UserSuggestions
+    |   |   └── ProfileHeaderTitle
+    │   ├── mock
+    │   ├── router
+    │   ├── store
+    │   ├── style
+    │   ├── views
+    │   ├── main.js
+    │   └── App.vue
+    ├── public
+    │   ├── favicon.ico	
+    │   └── index.html	
+    ├── node_modules
+    └── CONTRIBUTING.md	
+    
+
 <h3 align="center">Forget Password Page</h3>
 
 ![image](https://user-images.githubusercontent.com/40190772/89169706-dab34a00-d57e-11ea-99f7-66eaf0cbd7a3.png)
 </div>
+
+### Responsive Screenshots
+
+![image](https://user-images.githubusercontent.com/40190772/89171844-fe2bc400-d581-11ea-8e91-094470386114.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89171894-16034800-d582-11ea-9449-0780f98a79d7.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89171913-20254680-d582-11ea-961a-bea2cfe6908a.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89171956-2e736280-d582-11ea-83af-c8967c8bebde.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89172022-434ff600-d582-11ea-8d03-e7c15fc878d9.png)
+
+
+## Contributing
+
+> Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Istanews/blob/master/CONTRIBUTING.md) for ways to contribute.
+
+## Contributors
+> Thanks goes to these wonderful people in the frontend team.
+<table>
+  <tr>
+    <td align="center">
+    <a href="https://github.com/AbdallahHemdan" target="_black">
+    <img src="https://avatars1.githubusercontent.com/u/40190772?s=460&v=4" width="150px;" alt="abdallah hemdan"/>
+    <br />
+    <sub><b>Abdallah Hemdan</b></sub></a><a href="https://github.com/AbdallahHemdan/Instanews/commits/master?author=AbdallahHemdan" title="Leader">🎯</a><a href="https://github.com/AbdallahHemdan/Instanews/commits/master?author=AbdallahHemdan" title="Code">💻</a><a href="https://github.com/AbdallahHemdan/Instanews/pulls?q=is%3Apr+author%3AAbdallahHemdan" title="Reviewed Pull Requests">👀</a><br />
+    </td>
+  </tr>
+ </table>
+ 
+## License
+
+> This software is licensed under MIT License, See [License](https://github.com/AbdallahHemdan/Instanews/blob/master/LICENSE) for more information ©AbdallahHemdan.
