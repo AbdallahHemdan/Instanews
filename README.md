@@ -8,16 +8,17 @@
 
 <h3 align="center">Instanews</h3>
 <div align="center">
+  
+  [![GitHub contributors](https://img.shields.io/github/contributors/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/contributors)
+  [![GitHub issues](https://img.shields.io/github/issues/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/issues)
+  [![GitHub forks](https://img.shields.io/github/forks/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/network)
+  [![GitHub stars](https://img.shields.io/github/stars/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/stargazers)
+  [![GitHub license](https://img.shields.io/github/license/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/blob/master/LICENSE)
+  <img src="https://img.shields.io/github/languages/count/abdallahHemdan/Instagram" />
+  <img src="https://img.shields.io/github/languages/top/AbdallahHemdan/Instagram" />
+  <img src="https://img.shields.io/github/languages/code-size/AbdallahHemdan/Instagram" />
+  <img src="https://img.shields.io/github/issues-pr-raw/AbdallahHemdan/Instagram" />
 
-[![GitHub contributors](https://img.shields.io/github/contributors/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/contributors)
-[![GitHub issues](https://img.shields.io/github/issues/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/issues)
-[![GitHub forks](https://img.shields.io/github/forks/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/network)
-[![GitHub stars](https://img.shields.io/github/stars/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/stargazers)
-[![GitHub license](https://img.shields.io/github/license/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/blob/master/LICENSE)
-<img src="https://img.shields.io/github/languages/count/abdallahHemdan/Instagram" />
-<img src="https://img.shields.io/github/languages/top/AbdallahHemdan/Instagram" />
-<img src="https://img.shields.io/github/languages/code-size/AbdallahHemdan/Instagram" />
-<img src="https://img.shields.io/github/issues-pr-raw/AbdallahHemdan/Instagram" />
 </div>
 
 ## Table of Contents
@@ -163,7 +164,9 @@ npm run test:unit
 
 ## File Structure
  
-```                                   
+<div align="left">
+ 
+```md                                   
 Instanews
 ├── README.md
 ├── LICENSE
@@ -219,6 +222,7 @@ Instanews
 └── CONTRIBUTING.md	
 ``` 
 
+</div>
 <h3 align="center">Forget Password Page</h3>
 
 ![image](https://user-images.githubusercontent.com/40190772/89169706-dab34a00-d57e-11ea-99f7-66eaf0cbd7a3.png)
