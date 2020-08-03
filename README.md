@@ -35,7 +35,7 @@
 - [License](#license)
 
 ## About
-> Instanew is a fully responsive soical media app which is a mimic for [Instagram](https://www.instagram.com/) built using [Vuejs](https://vuejs.org/).
+> Instanews is a fully responsive social media app that is a mimic for [Instagram](https://www.instagram.com/) built using [Vuejs](https://vuejs.org/).
 
 ### Build with
 - [Vye JS](https://vuejs.org/)
