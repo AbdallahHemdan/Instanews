@@ -3,6 +3,7 @@
     <profile-upper-header></profile-upper-header>
     <profile-stories></profile-stories>
     <hr />
+    <profile-gallery></profile-gallery>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ export default {
   components: {
     'profile-upper-header': () => import('./../ProfileUpperHeader/ProfileUpperHeader'),
     'profile-stories': () => import('./../ProfileStories/ProfileStories'),
+    'profile-gallery': () => import('./../ProfileGallery/ProfileGallery'),
   },
 };
 </script>
