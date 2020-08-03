@@ -56,9 +56,9 @@ const items = [
   {
     img: require('./../../assets/Profile-Gallery/Mayuko/7.jpg'),
     alt: 'mayuko image',
-    hasType: true,
-    type: 'Video',
-    typeIcon: 'fa fa-play',
+    hasType: false,
+    type: 'Gallery',
+    typeIcon: 'fa fa-clone',
     likes: 2335,
     comments: 132,
   },
