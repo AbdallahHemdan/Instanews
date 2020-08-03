@@ -33,6 +33,7 @@
 - [File Structure](#file-structure)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
+- [BackLog](#backlog)
 - [License](#license)
 
 ## About
@@ -270,6 +271,18 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
     </td>
   </tr>
  </table>
+ 
+## BackLog
+
+- [ ] Connect Instanew with firebase to provide dealing with real db
+- [ ] Create chat-module for inbox-page
+- [ ] Integrate Search module with firebase
+- [ ] Add Stories section in home-page
+- [ ] Enable uploading stories, write comments, Edit profile
+- [ ] Create modal for posts (when user click the post the modal popup)
+- [ ] Create modals for following, followers in profile-page
+- [ ] Create suggestion component
+- [ ] Enable CTAs for notifications 
  
 ## License
 
