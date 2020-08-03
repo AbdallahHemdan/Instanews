@@ -213,6 +213,12 @@ Instanews
 
 <br />
 
+<h3 align="center">404 Page</h3>
+
+![image](https://user-images.githubusercontent.com/40190772/89175315-cde72400-d587-11ea-9171-ab9c51db9099.png)
+
+<br />
+
 <h3 align="center">Login Page</h3>
 
 ![image](https://user-images.githubusercontent.com/40190772/89169569-af305f80-d57e-11ea-9171-d11658e3475a.png)
@@ -250,6 +256,10 @@ Instanews
 <hr />
 
 ![image](https://user-images.githubusercontent.com/40190772/89172022-434ff600-d582-11ea-8d03-e7c15fc878d9.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89175323-d4759b80-d587-11ea-8711-75495e08df3f.png)
 
 
 
