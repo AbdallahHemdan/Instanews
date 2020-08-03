@@ -39,6 +39,9 @@
 ## About
 > Instanews is a fully responsive social media app that is a mimic for [Instagram](https://www.instagram.com/) built using [Vuejs](https://vuejs.org/).
 
+## Important Note
+> I am still working on the project, this is not the final verison of it, I just make it public to get feedback and imporve it ... Happay-Eid 🎉🐏
+
 ### Build with
 - [Vye JS](https://vuejs.org/)
 - [Vuex](https://vuex.vuejs.org/)
@@ -54,7 +57,7 @@
 1. **_Clone the repository_**
 
 ```sh
-$ git clone https://github.com/AbdallahHemdan/Instagram.git
+$ git clone https://github.com/AbdallahHemdan/Instanews.git
 ```
 2. **_Navigate to repository directory_**
 ```sh
@@ -166,6 +169,11 @@ Instanews
 <hr />
 
 ![image](https://user-images.githubusercontent.com/40190772/89172160-798d7580-d582-11ea-9a17-36fa05c963bb.png)
+
+<hr />
+
+![home](https://user-images.githubusercontent.com/40190772/89176797-7c8c6400-d58a-11ea-8da0-fb2707fa091c.gif)
+
 
 <br />
 
