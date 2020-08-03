@@ -256,7 +256,7 @@ Instanews
 
 > Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Istanews/blob/master/CONTRIBUTING.md) for ways to contribute.
+Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instanews/blob/master/CONTRIBUTING.md) for ways to contribute.
 
 ## Contributors
 > Thanks goes to these wonderful people in the frontend team.
