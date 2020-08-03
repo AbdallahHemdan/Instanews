@@ -6,7 +6,7 @@
   </a>
 </p>
 
-<h3 align="center">Insta news</h3>
+<h3 align="center">Instanews</h3>
 <div align="center">
 
 [![GitHub contributors](https://img.shields.io/github/contributors/AbdallahHemdan/Instagram)](https://github.com/AbdallahHemdan/Instagram/contributors)
