@@ -163,59 +163,59 @@ npm run test:unit
 
 ## File Structure
                                     
-    Instanews
-    ├── README.md
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    ├── jest.config.js
-    ├── backlog.md
-    ├── babel.config.js
-    ├── .gitignore
-    ├── .browserslistrc
-    ├── tests
-    │   └── unit
-    ├── src
-    │   ├── assets
-    │   ├── components
-    |   |   ├── Comments
-    |   |   ├── InboxContainer	
-    |   |   ├── LeftAuth	
-    |   |   ├── MessageItem	
-    |   |   ├── MessagesContainer	
-    |   |   ├── Navbar	
-    |   |   ├── Newsfeed	
-    |   |   ├── NotificationItem	
-    |   |   ├── NotificationsDropdown	
-    |   |   ├── OrDivider	
-    |   |   ├── Post	
-    |   |   ├── PostAction	
-    |   |   ├── PostDescription	
-    |   |   ├── ProfileDescription	
-    |   |   ├── ProfileDropdown	
-    |   |   ├── ProfileGallery	
-    |   |   ├── ProfileGalleryItem	
-    |   |   ├── ProfileHeader
-    |   |   ├── ProfileStories
-    |   |   ├── ProfileUpperHeader
-    |   |   ├── SingleComment
-    |   |   ├── SingleSuggestion
-    |   |   ├── SuggestionHeader
-    |   |   ├── UserInfo
-    |   |   ├── UserSuggestions
-    |   |   └── ProfileHeaderTitle
-    │   ├── mock
-    │   ├── router
-    │   ├── store
-    │   ├── style
-    │   ├── views
-    │   ├── main.js
-    │   └── App.vue
-    ├── public
-    │   ├── favicon.ico	
-    │   └── index.html	
-    ├── node_modules
-    └── CONTRIBUTING.md	
+      Instanews
+      ├── README.md
+      ├── LICENSE
+      ├── package-lock.json
+      ├── package.json
+      ├── jest.config.js
+      ├── backlog.md
+      ├── babel.config.js
+      ├── .gitignore
+      ├── .browserslistrc
+      ├── tests
+      │   └── unit
+      ├── src
+      │   ├── assets
+      │   ├── components
+      |   |   ├── Comments
+      |   |   ├── InboxContainer	
+      |   |   ├── LeftAuth	
+      |   |   ├── MessageItem	
+      |   |   ├── MessagesContainer	
+      |   |   ├── Navbar	
+      |   |   ├── Newsfeed	
+      |   |   ├── NotificationItem	
+      |   |   ├── NotificationsDropdown	
+      |   |   ├── OrDivider	
+      |   |   ├── Post	
+      |   |   ├── PostAction	
+      |   |   ├── PostDescription	
+      |   |   ├── ProfileDescription	
+      |   |   ├── ProfileDropdown	
+      |   |   ├── ProfileGallery	
+      |   |   ├── ProfileGalleryItem	
+      |   |   ├── ProfileHeader
+      |   |   ├── ProfileStories
+      |   |   ├── ProfileUpperHeader
+      |   |   ├── SingleComment
+      |   |   ├── SingleSuggestion
+      |   |   ├── SuggestionHeader
+      |   |   ├── UserInfo
+      |   |   ├── UserSuggestions
+      |   |   └── ProfileHeaderTitle
+      │   ├── mock
+      │   ├── router
+      │   ├── store
+      │   ├── style
+      │   ├── views
+      │   ├── main.js
+      │   └── App.vue
+      ├── public
+      │   ├── favicon.ico	
+      │   └── index.html	
+      ├── node_modules
+      └── CONTRIBUTING.md	
     
 
 <h3 align="center">Forget Password Page</h3>
