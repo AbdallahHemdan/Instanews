@@ -1,0 +1,346 @@
+img {
+  display: block;
+}
+
+.gallery-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 930.5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 5px auto #4d90fe;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+}
+
+/* Profile Section */
+
+.profile {
+  padding: 50px 0;
+}
+
+.profile::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin-right: 30px;
+  width: calc(33.333% - 10px);
+}
+
+.profile-image img {
+  border-radius: 50%;
+}
+
+.profile-user-settings,
+.profile-stats,
+.profile-bio {
+  float: left;
+  width: calc(66.666% - 20px);
+}
+
+.profile-user-settings {
+  margin-top: 10.1px;
+}
+
+.profile-user-name {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 30.2px;
+}
+
+.profile-edit-btn {
+  margin-left: 20px;
+  padding: 0 20.4px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 10.4px;
+  line-height: 1.8;
+}
+
+.profile-settings-btn {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.profile-stats {
+  margin-top: 20.3px;
+}
+
+.profile-stats li {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 10.6px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.profile-stats li:last-of-type {
+  margin-right: 0;
+}
+
+.profile-bio {
+  margin-top: 20.3px;
+  font-weight: 400;
+  font-size: 10.6px;
+  line-height: 1.5;
+}
+
+.profile-real-name,
+.profile-stat-count,
+.profile-edit-btn {
+  font-weight: 600;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px -10px;
+  padding-bottom: 30px;
+}
+
+.gallery-item {
+  position: relative;
+  flex: 1 0 220px;
+  margin: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item-info {
+  display: none;
+}
+
+.gallery-item-info ul {
+  padding-left: 0;
+}
+
+.gallery-item-info li {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.gallery-item-likes {
+  margin-right: 20px;
+}
+
+.gallery-item-type {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  font-size: 20.5px;
+}
+
+.fa-clone,
+.fa-comment {
+  transform: rotateY(180deg);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loader {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: 6px solid #007bff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: loader 600ms linear infinite;
+}
+
+@media screen and (max-width: 40rem) {
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+  }
+
+  .profile::after {
+    display: none;
+  }
+
+  .profile-image,
+  .profile-user-settings,
+  .profile-bio,
+  .profile-stats {
+    float: none;
+    width: auto;
+  }
+
+  .profile-image img {
+    width: 70.7px;
+  }
+
+  .profile-user-settings {
+    display: flex;
+    flex-basis: calc(100% - 100.7px);
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .profile-user-name {
+    font-size: 20px;
+  }
+
+  .profile-edit-btn {
+    order: 1;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .profile-edit-btn {
+    margin-left: 0;
+  }
+
+  .profile-bio {
+    margin-top: 10.5px;
+    font-size: 10.4px;
+  }
+
+  .profile-edit-btn,
+  .profile-bio,
+  .profile-stats {
+    flex-basis: 100%;
+  }
+
+  .profile-stats {
+    order: 1;
+    margin-top: 10.5px;
+  }
+
+  .profile-stats ul {
+    display: flex;
+    padding: 10.2px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    text-align: center;
+  }
+
+  .profile-stats li {
+    flex: 1;
+    margin: 0;
+    font-size: 10.4px;
+  }
+
+  .profile-stat-count {
+    display: block;
+  }
+}
+
+/* Spinner Animation */
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+
+The following code will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox & floated styling. 
+
+*/
+
+@supports (display: grid) {
+  @media (max-width: 400px) {
+    .profile {
+      grid-template-columns: auto 1fr;
+      grid-row-gap: 10.5px;
+    }
+
+    .profile-image {
+      grid-row: 1 / 2;
+    }
+
+    .profile-user-settings {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 10px;
+    }
+
+    .profile-edit-btn,
+    .profile-stats,
+    .profile-bio {
+      grid-column: 1 / -1;
+    }
+
+    .profile-user-settings,
+    .profile-edit-btn,
+    .profile-settings-btn,
+    .profile-bio,
+    .profile-stats {
+      margin: 0;
+    }
+  }
+  .profile {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 30px;
+  }
+
+  .profile-image {
+    grid-row: 1 / -1;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .profile-image,
+  .profile-user-settings,
+  .profile-stats,
+  .profile-bio,
+  .gallery-item,
+  .gallery {
+    margin: 0;
+    width: auto;
+  }
+}
