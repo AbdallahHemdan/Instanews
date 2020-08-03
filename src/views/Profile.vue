@@ -42,6 +42,7 @@ export default {
   props: {},
   components: {
     'profile-header': () => import('./../components/ProfileHeader/ProfileHeader'),
+    'profile-gallery': () => import('./../components/ProfileGallery/ProfileGallery'),
   },
 };
 </script>
