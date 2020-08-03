@@ -66,9 +66,6 @@
               </div>
             </div>
           </div>
-          <!-- <a href="/profile" class="icon" title="Profile">
-            <img src="./../../assets/me.jpg" class="profile-img" alt="profile" />
-          </a> -->
         </div>
       </div>
     </div>
@@ -86,9 +83,9 @@ export default {
           imgSrc: 'https://img.icons8.com/ios/30/000000/home.png',
         },
         {
-          href: '/liked',
-          title: 'Liked posts',
-          imgSrc: 'https://img.icons8.com/ios/30/000000/like.png',
+          href: '/explore',
+          title: 'Explore',
+          imgSrc: 'https://img.icons8.com/ios/30/000000/compass.png',
         },
         {
           href: '/inbox',
@@ -96,9 +93,9 @@ export default {
           imgSrc: 'https://img.icons8.com/ios/30/000000/sent.png',
         },
         {
-          href: '/explore',
-          title: 'Explore',
-          imgSrc: 'https://img.icons8.com/ios/30/000000/compass.png',
+          href: '/liked',
+          title: 'Liked posts',
+          imgSrc: 'https://img.icons8.com/ios/30/000000/like.png',
         },
       ],
     };
