@@ -223,6 +223,10 @@ Instanews
 
 ![image](https://user-images.githubusercontent.com/40190772/89169569-af305f80-d57e-11ea-9171-d11658e3475a.png)
 
+<hr />
+
+![login](https://user-images.githubusercontent.com/40190772/89175578-4bab2f80-d588-11ea-8370-ddb2d7cf8930.gif)
+
 <br />
 
 <h3 align="center">Signup Page</h3>
