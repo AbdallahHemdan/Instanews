@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import firebase from 'firebase';
+import VueResource from 'vue-resource';
 
 Vue.config.productionTip = false;
 
@@ -17,6 +18,8 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+Vue.use(VueResource);
 
 new Vue({
   router,
