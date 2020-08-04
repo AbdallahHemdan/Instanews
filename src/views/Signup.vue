@@ -23,6 +23,9 @@
             Login with google
           </button>
           <or-divider></or-divider>
+          <div class="alert alert-danger err-msg" role="alert" v-show="this.errMessage">
+            {{ this.errMessage }}
+          </div>
           <form action="">
             <div class="form-label-group">
               <input
@@ -95,6 +98,7 @@ export default {
       email: '',
       password: '',
       confirmPassword: '',
+      errMessage: '',
     };
   },
   components: {
@@ -103,6 +107,13 @@ export default {
   },
   methods: {
     signup: function() {
+      if (!this.username) {
+        this.errMessage = "Username can't be empty";
+        return;
+      } else if (this.password != this.confirmPassword) {
+        this.errMessage = 'The two passwords are not equal';
+        return;
+      }
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.email, this.password)
@@ -121,8 +132,47 @@ export default {
           },
           err => {
             console.log(err);
+            this.errMessage = err.message;
           },
         );
+    },
+    authWithGoogle: function() {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(res => {
+          window.location = '/';
+        })
+        .catch(err => {
+          alert('Oops. ' + err.message);
+        });
+    },
+    authWithGithub: function() {
+      const provider = new firebase.auth.GithubAuthProvider();
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(function(result) {
+          // redirect to home page
+          window.location = '/';
+        })
+        .catch(function(error) {
+          alert('Oops. ' + error.message);
+        });
+    },
+    authWithFacebook: function() {
+      const provider = new firebase.auth.FacebookAuthProvider();
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(function(result) {
+          // redirect to home page
+          window.location = '/';
+        })
+        .catch(function(error) {
+          alert('Oops. ' + error.message);
+        });
     },
   },
 };
@@ -246,5 +296,10 @@ export default {
   span {
     font-weight: 600;
   }
+}
+
+.err-msg {
+  margin-bottom: 1rem;
+  padding: 5px 10px;
 }
 </style>

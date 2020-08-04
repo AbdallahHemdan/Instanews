@@ -9,19 +9,26 @@
         <p class="info">
           Log In into Instanews to see photos and videos from your friends.
         </p>
-        <button type="button" class="btn btn-primary btn-block social-btn">
+        <button
+          type="button"
+          class="btn btn-primary btn-block social-btn"
+          @click="authWithFacebook"
+        >
           <span class="fa fa-facebook brand-logo"></span>
           Login with facebook
         </button>
-        <button type="button" class="btn btn-dark btn-block social-btn">
+        <button type="button" class="btn btn-dark btn-block social-btn" @click="authWithGithub">
           <span class="fa fa-github brand-logo"></span>
           Login with github
         </button>
-        <button type="button" class="btn btn-danger btn-block social-btn">
+        <button type="button" class="btn btn-danger btn-block social-btn" @click="authWithGoogle">
           <span class="fa fa-google brand-logo"></span>
           Login with google
         </button>
         <or-divider></or-divider>
+        <div class="alert alert-danger err-msg" role="alert" v-show="this.errMessage">
+          {{ this.errMessage }}
+        </div>
         <form>
           <div class="form-label-group">
             <input
@@ -31,7 +38,6 @@
               class="form-control"
               placeholder="Phone number, username, or email"
               v-model="email"
-              required
             />
           </div>
           <div class="form-label-group">
@@ -42,11 +48,14 @@
               class="form-control"
               placeholder="Password"
               v-model="password"
-              required
             />
           </div>
           <div class="ctas">
-            <button type="button" class="btn btn-primary btn-block login-btn" @click="login">
+            <button
+              type="submit"
+              class="btn btn-primary btn-block login-btn"
+              @click.prevent="login"
+            >
               Log In
             </button>
             <div class="alts">
@@ -76,6 +85,7 @@ export default {
     return {
       email: '',
       password: '',
+      errMessage: '',
     };
   },
   components: {
@@ -89,13 +99,54 @@ export default {
         .signInWithEmailAndPassword(this.email, this.password)
         .then(
           user => {
-            console.log(user);
             window.location = '/';
           },
           err => {
-            console.log(err);
+            if (err.code === 'auth/invalid-email') {
+              this.errMessage = err.message;
+            } else if (err.code === 'auth/wrong-password') {
+              this.errMessage = 'The password is invalid';
+            }
           },
         );
+    },
+    authWithGoogle: function() {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(res => {
+          window.location = '/';
+        })
+        .catch(err => {
+          alert('Oops. ' + err.message);
+        });
+    },
+    authWithGithub: function() {
+      const provider = new firebase.auth.GithubAuthProvider();
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(function(result) {
+          // redirect to home page
+          window.location = '/';
+        })
+        .catch(function(error) {
+          alert('Oops. ' + error.message);
+        });
+    },
+    authWithFacebook: function() {
+      const provider = new firebase.auth.FacebookAuthProvider();
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(function(result) {
+          // redirect to home page
+          window.location = '/';
+        })
+        .catch(function(error) {
+          alert('Oops. ' + error.message);
+        });
     },
   },
 };
@@ -208,5 +259,10 @@ export default {
   line-height: 18px;
   min-height: 40px;
   margin-bottom: 1rem;
+}
+
+.err-msg {
+  margin-bottom: 1rem;
+  padding: 5px 10px;
 }
 </style>
