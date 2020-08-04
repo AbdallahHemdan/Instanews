@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import { isLoggedIn } from './../auth/index';
 
 Vue.use(VueRouter);
 
@@ -55,6 +56,25 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
+});
+
+// check for validating routes beforeEach redirect
+router.beforeEach((to, from, next) => {
+  if (to.name == 'Login' && isLoggedIn()) {
+    next({
+      path: '/',
+    });
+  } else if (to.name == 'Signup' && isLoggedIn()) {
+    next({
+      path: '/',
+    });
+  } else if (to.name == 'Home' && !isLoggedIn()) {
+    next({
+      path: '/login',
+    });
+  } else {
+    next();
+  }
 });
 
 export default router;
