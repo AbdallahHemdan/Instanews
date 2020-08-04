@@ -10,6 +10,18 @@
         <p class="info">
           Log In into Instanews to see photos and videos from your friends.
         </p>
+        <div
+          :class="{
+            alert: true,
+            'alert-danger': !success,
+            'alert-success': success,
+            'err-msg': true,
+          }"
+          role="alert"
+          v-show="this.errMessage"
+        >
+          {{ this.errMessage }}
+        </div>
         <form action="">
           <div class="form-label-group">
             <input
@@ -23,13 +35,17 @@
           </div>
           <div class="ctas">
             <div class="first-ctas">
-              <button type="button" class="btn btn-primary btn-block login-btn">
+              <button
+                type="button"
+                class="btn btn-primary btn-block login-btn"
+                @click="forgetPassword"
+              >
                 Send Login Link
               </button>
               <button
                 type="button"
                 class="btn btn-secondary btn-block login-btn"
-                onClick="{this.handleBackToLogin}"
+                @click="handleBackToLogin"
               >
                 <span class="fa fa-angle-double-left back-login"></span>
                 Back to Log In
@@ -50,16 +66,38 @@
 </template>
 
 <script>
+import firebase from 'firebase';
+
 export default {
   name: 'ForgetPassword',
   data: function() {
     return {
       email: '',
+      errMessage: '',
+      success: false,
     };
   },
   components: {
     'left-auth': () => import('./../components/LeftAuth/LeftAuth'),
     'or-divider': () => import('./../components/OrDivider/OrDivider'),
+  },
+  methods: {
+    forgetPassword: function() {
+      firebase
+        .auth()
+        .sendPasswordResetEmail(this.email)
+        .then(user => {
+          this.errMessage = 'Please check your email to reset your password';
+          this.success = true;
+        })
+        .catch(err => {
+          this.errMessage = err.message;
+          this.success = false;
+        });
+    },
+    handleBackToLogin: function() {
+      window.location = '/login';
+    },
   },
 };
 </script>
@@ -179,5 +217,10 @@ export default {
 .first-ctas {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.err-msg {
+  margin-bottom: 1rem;
+  padding: 5px 10px;
 }
 </style>
