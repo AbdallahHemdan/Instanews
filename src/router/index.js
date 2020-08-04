@@ -68,7 +68,12 @@ router.beforeEach((to, from, next) => {
     next({
       path: '/',
     });
-  } else if (to.name != 'Login' && to.to != 'Signup' && !isLoggedIn()) {
+  } else if (
+    to.name != 'Login' &&
+    to.name != 'Signup' &&
+    to.name != 'ForgetPassword' &&
+    !isLoggedIn()
+  ) {
     next({
       path: '/login',
     });
