@@ -8,15 +8,30 @@
 </template>
 
 <script>
+import firebase from 'firebase';
 import Navbar from './components/Navbar/Navbar';
-
 export default {
   name: 'app',
   data: function() {
-    return {};
+    return {
+      user: null,
+    };
   },
   components: {
     navbar: Navbar,
+  },
+  mounted: function() {
+    firebase.auth().onAuthStateChanged(user => {
+      if (user) {
+        this.user = user;
+        localStorage.setItem('accessToken', user.uid);
+        localStorage.setItem('displayName', user.displayName);
+      } else {
+        this.user = null;
+        localStorage.removeItem('accessToken');
+        localStorage.removeItem('displayName');
+      }
+    });
   },
 };
 </script>
