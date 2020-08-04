@@ -45,6 +45,7 @@
 ### Build with
 - [Vue JS](https://vuejs.org/)
 - [Vuex](https://vuex.vuejs.org/)
+- [Firebase](https://firebase.google.com/?gclid=CjwKCAjwjqT5BRAPEiwAJlBuBXqiYnG_P_iPMJ5MItS8029GlkjKYrJNblDVrp88ZizMxEiPmLc8yxoCnS0QAvD_BwE)
 - [Bootstrap](https://getbootstrap.com/)
 - [Jest](https://jestjs.io/)
 - [Axios](https://github.com/axios/axios)
@@ -314,6 +315,7 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 - [x] ~Connect Instanew with firebase to provide authentication (login-signup)~
 - [x] ~Handle auto redirect in different cases (user logged in and trying to visit login/signup pages | user is not logged in and trying to visit any page)~
 - [x] ~Create auth with (Google - Facebook - Github)~
+- [x] ~Handle form validation for (Login - Signup - ForgetPassword)~
 - [ ] Create chat-module for inbox-page
 - [ ] Integrate Search module with firebase
 - [ ] Add Stories section in home-page
