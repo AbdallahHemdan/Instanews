@@ -63,7 +63,7 @@
               />
             </div>
             <div class="ctas">
-              <button type="button" class="btn btn-primary btn-block login-btn">
+              <button type="button" class="btn btn-primary btn-block login-btn" @click="signup">
                 Sign Up
               </button>
               <div class="alts">
@@ -85,6 +85,8 @@
 </template>
 
 <script>
+import firebase from 'firebase';
+
 export default {
   name: 'Signup',
   data: function() {
@@ -98,6 +100,30 @@ export default {
   components: {
     'left-auth': () => import('./../components/LeftAuth/LeftAuth'),
     'or-divider': () => import('./../components/OrDivider/OrDivider'),
+  },
+  methods: {
+    signup: function() {
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(this.email, this.password)
+        .then(
+          user => {
+            if (firebase.auth().currentUser) {
+              firebase
+                .auth()
+                .currentUser.updateProfile({
+                  displayName: this.username,
+                })
+                .then(e => {
+                  window.location = '/';
+                });
+            }
+          },
+          err => {
+            console.log(err);
+          },
+        );
+    },
   },
 };
 </script>
