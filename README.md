@@ -246,6 +246,12 @@ Instanews
 
 <br />
 
+<h3 align="center">Auth with Google, Facebook and Github</h3>
+
+![auth](https://user-images.githubusercontent.com/40190772/89303112-04966a80-d66c-11ea-9a5f-84cf94fdcfb7.gif)
+
+<br />
+
 <h3 align="center">Signup Page</h3>
 
 ![image](https://user-images.githubusercontent.com/40190772/89169658-ccfdc480-d57e-11ea-8924-5293cca4e423.png)
@@ -307,6 +313,7 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 
 - [x] ~Connect Instanew with firebase to provide authentication (login-signup)~
 - [x] ~Handle auto redirect in different cases (user logged in and trying to visit login/signup pages | user is not logged in and trying to visit any page)~
+- [x] ~Create auth with (Google - Facebook - Github)~
 - [ ] Create chat-module for inbox-page
 - [ ] Integrate Search module with firebase
 - [ ] Add Stories section in home-page
