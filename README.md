@@ -36,14 +36,14 @@
 - [BackLog](#backlog)
 - [License](#license)
 
-## About
-> Instanews is a fully responsive social media app that is a mimic for [Instagram](https://www.instagram.com/) built using [Vuejs](https://vuejs.org/).
-
 ## Important Note
 > I am still working on the project, this is not the final verison of it, I just make it public to get feedback and imporve it ... Happay-Eid 🎉🐏
 
+## About
+> Instanews is a fully responsive social media app that is a mimic for [Instagram](https://www.instagram.com/) built using [Vuejs](https://vuejs.org/).
+
 ### Build with
-- [Vye JS](https://vuejs.org/)
+- [Vue JS](https://vuejs.org/)
 - [Vuex](https://vuex.vuejs.org/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Jest](https://jestjs.io/)
@@ -82,7 +82,7 @@ $ npm run serve
 $ npm run build
 ```
 
-3. **_Run your unit tests_**
+3. **_Run unit tests_**
 ```sh
 npm run test:unit
 ```
@@ -139,6 +139,15 @@ Instanews
 │   ├── store
 │   ├── style
 │   ├── views
+|   |   ├── Chat
+|   |   ├── Explore
+|   |   ├── Forget Password
+|   |   ├── Home
+|   |   ├── Liked
+|   |   ├── Login
+|   |   ├── Signup
+|   |   ├── NotFound
+|   |   └── Profile
 │   ├── main.js
 │   └── App.vue
 ├── public
