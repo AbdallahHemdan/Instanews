@@ -68,7 +68,7 @@ router.beforeEach((to, from, next) => {
     next({
       path: '/',
     });
-  } else if (to.name == 'Home' && !isLoggedIn()) {
+  } else if (to.name != 'Login' && to.to != 'Signup' && !isLoggedIn()) {
     next({
       path: '/login',
     });
