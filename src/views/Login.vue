@@ -22,7 +22,7 @@
           Login with google
         </button>
         <or-divider></or-divider>
-        <form action="">
+        <form>
           <div class="form-label-group">
             <input
               type="email"
@@ -31,6 +31,7 @@
               class="form-control"
               placeholder="Phone number, username, or email"
               v-model="email"
+              required
             />
           </div>
           <div class="form-label-group">
@@ -41,10 +42,11 @@
               class="form-control"
               placeholder="Password"
               v-model="password"
+              required
             />
           </div>
           <div class="ctas">
-            <button type="button" class="btn btn-primary btn-block login-btn">
+            <button type="button" class="btn btn-primary btn-block login-btn" @click="login">
               Log In
             </button>
             <div class="alts">
@@ -66,6 +68,8 @@
 </template>
 
 <script>
+import firebase from 'firebase';
+
 export default {
   name: 'Login',
   data: function() {
@@ -77,6 +81,22 @@ export default {
   components: {
     'left-auth': () => import('./../components/LeftAuth/LeftAuth'),
     'or-divider': () => import('./../components/OrDivider/OrDivider'),
+  },
+  methods: {
+    login: function() {
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then(
+          user => {
+            console.log(user);
+            window.location = '/';
+          },
+          err => {
+            console.log(err);
+          },
+        );
+    },
   },
 };
 </script>
