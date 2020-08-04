@@ -45,6 +45,7 @@
 ### Build with
 - [Vue JS](https://vuejs.org/)
 - [Vuex](https://vuex.vuejs.org/)
+- [Firebase](https://firebase.google.com/?gclid=CjwKCAjwjqT5BRAPEiwAJlBuBXqiYnG_P_iPMJ5MItS8029GlkjKYrJNblDVrp88ZizMxEiPmLc8yxoCnS0QAvD_BwE)
 - [Bootstrap](https://getbootstrap.com/)
 - [Jest](https://jestjs.io/)
 - [Axios](https://github.com/axios/axios)
