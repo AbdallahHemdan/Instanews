@@ -306,7 +306,7 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 ## BackLog
 
 - [x] ~Connect Instanew with firebase to provide authentication (login-signup)~
-- [x] ~Handle auto redirect in different cases (user logged in and trying to visit login/signup pages | user is not logged in and trying to visit home)~
+- [x] ~Handle auto redirect in different cases (user logged in and trying to visit login/signup pages | user is not logged in and trying to visit any page)~
 - [ ] Create chat-module for inbox-page
 - [ ] Integrate Search module with firebase
 - [ ] Add Stories section in home-page
