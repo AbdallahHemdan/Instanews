@@ -24,7 +24,7 @@
         Settings
       </a>
       <div class="logout">
-        <a class="dropdown-item" href="/">
+        <a class="dropdown-item" href="/" @click="logout">
           <img src="./../../assets/svgs/logout.svg" alt="logout icon" class="drop-icon" />
           Log Out
         </a>
@@ -34,8 +34,16 @@
 </template>
 
 <script>
+import firebase from 'firebase';
+
 export default {
   name: 'ProfileDropdown',
+  methods: {
+    logout: function() {
+      firebase.auth().signOut();
+      window.localStorage.removeItem('accessToken');
+    },
+  },
 };
 </script>
 
