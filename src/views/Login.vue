@@ -36,7 +36,7 @@
               name="email"
               id="email"
               class="form-control"
-              placeholder="Phone number, username, or email"
+              placeholder="Email address"
               v-model="email"
             />
           </div>
