@@ -57,8 +57,8 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
   margin-top: 2rem;
+  margin-bottom: 1rem;
 
   .story-container {
     display: flex;
