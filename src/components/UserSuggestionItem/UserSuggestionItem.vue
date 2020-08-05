@@ -1,7 +1,7 @@
 <template>
   <div class="suggestions__item">
     <div class="suggestions__item__header">
-      <div class="remove__suggestion">X</div>
+      <div class="remove__suggestion">&times;</div>
     </div>
     <div class="suggestions__item__body">
       <div class="suggestion__item__img">
@@ -54,7 +54,6 @@ export default {
       color: #999;
       font-weight: 500;
       cursor: pointer;
-      font-size: 14px;
     }
   }
 
