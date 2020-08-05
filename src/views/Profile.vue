@@ -3,6 +3,12 @@
     <profile-header></profile-header>
     <profile-stories></profile-stories>
     <div class="suggestions">
+      <div class="left-btn" @click="scroll_left">
+        <img src="./../assets/left-arrow.png" alt="left arrow" class="arrow" />
+      </div>
+      <div class="right-btn" @click="scroll_right">
+        <img src="./../assets/right-arrow.png" alt="right arrow" class="arrow" />
+      </div>
       <div class="suggestions__header">
         <div class="suggestions__title">Suggested</div>
         <div class="suggestions__seeall" data-toggle="modal" data-target="#seeall">
@@ -63,6 +69,17 @@ export default {
     'user-suggestion': () => import('./../components/UserSuggestionItem/UserSuggestionItem'),
     'follow-item': () => import('./../components/FollowItem/FollowItem'),
   },
+  methods: {
+    scroll_left() {
+      let content = document.querySelector('.suggestions__items');
+      content.scrollLeft -= 200;
+    },
+
+    scroll_right() {
+      let content = document.querySelector('.suggestions__items');
+      content.scrollLeft += 200;
+    },
+  },
 };
 </script>
 
@@ -73,6 +90,7 @@ export default {
   border: 1px solid #dbdbdb;
   padding: 20px 25px;
   border-radius: 4px;
+  position: relative;
 
   .suggestions__header {
     display: flex;
@@ -93,7 +111,7 @@ export default {
 
   .suggestions__items {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -130,5 +148,27 @@ export default {
   flex: 1 1 auto;
   padding: 1rem;
   overflow-y: auto;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  z-index: 1500;
+  background-color: #fff;
+}
+
+.left-btn {
+  position: absolute;
+  top: 45%;
+  left: 16px;
+  cursor: pointer;
+}
+
+.right-btn {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  cursor: pointer;
+  margin-right: 16px;
 }
 </style>
