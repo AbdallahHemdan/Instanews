@@ -1,5 +1,5 @@
 <template>
-  <div class="profile-gallery gallery-container">
+  <div class="gallery-container">
     <div class="gallery" v-if="items">
       <gallery-item v-for="(item, index) in items" :key="index" :item="item"></gallery-item>
     </div>

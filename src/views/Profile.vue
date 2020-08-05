@@ -1,19 +1,23 @@
 <template>
-  <div class="profile-container">
+  <div class="profile">
     <profile-header></profile-header>
     <profile-stories></profile-stories>
+
     <div class="suggestions">
-      <div class="left-btn" @click="scroll_left">
+      <div class="direc direc--left" @click="scroll_left">
         <img src="./../assets/left-arrow.png" alt="left arrow" class="arrow" />
       </div>
-      <div class="right-btn" @click="scroll_right">
+
+      <div class="direc direc--right" @click="scroll_right">
         <img src="./../assets/right-arrow.png" alt="right arrow" class="arrow" />
       </div>
+
       <div class="suggestions__header">
         <div class="suggestions__title">Suggested</div>
         <div class="suggestions__seeall" data-toggle="modal" data-target="#seeall">
           See All
         </div>
+
         <div
           class="modal fade"
           id="seeall"
@@ -29,6 +33,7 @@
                   <span aria-hidden="true">&times;</span>
                 </div>
               </div>
+
               <div class="modal-body">
                 <follow-item
                   v-for="(suggestion, index) in suggestions"
@@ -40,6 +45,7 @@
           </div>
         </div>
       </div>
+
       <div class="suggestions__items">
         <user-suggestion
           v-for="(suggestion, index) in suggestions"
@@ -49,7 +55,9 @@
         </user-suggestion>
       </div>
     </div>
+
     <hr />
+
     <profile-gallery></profile-gallery>
   </div>
 </template>
@@ -113,6 +121,20 @@ export default {
     display: flex;
     overflow-x: hidden;
   }
+
+  .direc {
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+
+    &--left {
+      left: 16px;
+    }
+
+    &--right {
+      right: 16px;
+    }
+  }
 }
 
 .modal__header {
@@ -122,6 +144,17 @@ export default {
   align-items: center;
   position: relative;
   padding: 14px;
+
+  .modal__close {
+    position: absolute;
+    right: 24px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .modal__title {
+    font-weight: 600;
+  }
 }
 
 .modal-content {
@@ -129,17 +162,6 @@ export default {
   width: 400px;
   height: 400px;
   margin: auto;
-}
-
-.modal__close {
-  position: absolute;
-  right: 24px;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.modal__title {
-  font-weight: 600;
 }
 
 .modal-body {
@@ -155,20 +177,5 @@ export default {
   height: 24px;
   z-index: 1500;
   background-color: #fff;
-}
-
-.left-btn {
-  position: absolute;
-  top: 45%;
-  left: 16px;
-  cursor: pointer;
-}
-
-.right-btn {
-  position: absolute;
-  top: 45%;
-  right: 0;
-  cursor: pointer;
-  margin-right: 16px;
 }
 </style>

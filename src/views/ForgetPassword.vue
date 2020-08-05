@@ -2,14 +2,20 @@
   <div class="container auth-container">
     <div class="row">
       <left-auth></left-auth>
+
       <div class="right-col text-center">
-        <a href="/" class="header-link">
-          <h2 class="header">Instanews</h2>
-        </a>
-        <img src="./../assets/lock.png" alt="lock" class="lock" />
-        <p class="info">
-          Log In into Instanews to see photos and videos from your friends.
-        </p>
+        <div class="header">
+          <a href="/" class="header__link">
+            <h2 class="header__title">Instanews</h2>
+          </a>
+
+          <img src="./../assets/lock.png" alt="lock" class="header__icon" draggable="false" />
+
+          <p class="header__info">
+            Log In into Instanews to see photos and videos from your friends.
+          </p>
+        </div>
+
         <div
           :class="{
             alert: true,
@@ -22,7 +28,8 @@
         >
           {{ this.errMessage }}
         </div>
-        <form action="">
+
+        <form>
           <div class="form-label-group">
             <input
               type="email"
@@ -33,29 +40,33 @@
               v-model="email"
             />
           </div>
-          <div class="ctas">
-            <div class="first-ctas">
+
+          <div class="options">
+            <div class="options__first">
               <button
                 type="button"
-                class="btn btn-primary btn-block login-btn"
+                class="btn btn-primary btn-block auth-btn"
                 @click="forgetPassword"
               >
                 Send Login Link
               </button>
+
               <button
                 type="button"
-                class="btn btn-secondary btn-block login-btn"
+                class="btn btn-secondary btn-block auth-btn"
                 @click="handleBackToLogin"
               >
-                <span class="fa fa-angle-double-left back-login"></span>
+                <span class="fa fa-angle-double-left"></span>
                 Back to Log In
               </button>
             </div>
+
             <or-divider></or-divider>
-            <div class="alts">
+
+            <div class="options__second">
               <div class="have-account">
                 <span>Don't have an account? </span>
-                <a href="./signup">Sign up</a>
+                <a href="./signup" class="have-account__link">Sign up</a>
               </div>
             </div>
           </div>
@@ -110,93 +121,68 @@ export default {
 
 .auth-container {
   margin-top: 20px;
+
+  .right-col {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 400px;
+    float: right;
+    margin: 20px 10px 0px 10px;
+    padding: 40px;
+
+    @media (max-width: 992px) {
+      margin: 20px auto;
+    }
+  }
 }
-.right-col {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  width: 400px;
-  float: right;
-  margin: 20px 10px 0px 10px;
-  padding: 40px;
-}
+
 .header {
-  font-family: 'Pacifico', cursive;
-  font-weight: 300;
-}
+  &__title {
+    font-family: 'Pacifico', cursive;
+    font-weight: 300;
+  }
 
-.header-link:hover {
-  text-decoration: none;
-  color: #007bff;
-}
+  &__link:hover {
+    text-decoration: none;
+    color: #007bff;
+  }
 
-.info {
-  font-size: 17px;
-  line-height: 25px;
-  color: #999;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
-.brand-logo {
-  margin-right: 10px;
-}
+  &__icon {
+    height: 70px;
+    margin: 15px auto 0;
+  }
 
-.divider {
-  border-top: 1px solid #d9dadc;
-  display: block;
-  line-height: 1px;
-  margin: 25px 0;
-  position: relative;
-  text-align: center;
-}
-
-.divider .divider-title {
-  background: #fff;
-  font-size: 12px;
-  letter-spacing: 1px;
-  padding: 0 15px;
-  text-transform: uppercase;
-  color: #999;
-}
-
-.email::placeholder,
-.password::placeholder {
-  color: #555;
-  font-size: 18px;
-  font-weight: 200;
-  opacity: 0.1;
-}
-.field {
-  margin-bottom: 10px;
+  &__info {
+    font-size: 17px;
+    line-height: 25px;
+    color: #999;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
 }
 
 .have-account {
   margin-top: 15px;
-}
-.have-account a {
-  padding: 5px;
-}
 
-@media (max-width: 992px) {
-  .right-col {
-    margin: 20px auto;
+  &__link {
+    padding: 5px;
   }
 }
-.login-btn {
-  padding: 6px;
+
+.options {
+  &__first {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .auth-btn {
+      padding: 6px;
+    }
+  }
 }
 
-.err-message {
-  color: red;
-  font-weight: 400;
-  margin-bottom: -15px;
-}
-
-.alert-dismissible {
-  padding-right: 2rem !important;
-}
-
-.social-btn {
-  padding: 5px;
+.err-msg {
+  margin-bottom: 1rem;
+  padding: 5px 10px;
 }
 
 .form-control {
@@ -207,20 +193,5 @@ export default {
   line-height: 18px;
   min-height: 40px;
   margin-bottom: 1rem;
-}
-
-.lock {
-  height: 70px;
-  margin: 15px auto 0;
-}
-
-.first-ctas {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.err-msg {
-  margin-bottom: 1rem;
-  padding: 5px 10px;
 }
 </style>

@@ -4,6 +4,7 @@
       <home-stories></home-stories>
       <newsfeed></newsfeed>
     </div>
+
     <div class="home__right">
       <user-suggestions></user-suggestions>
     </div>

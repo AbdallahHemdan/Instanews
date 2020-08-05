@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navbar></navbar>
-    <main class="container main-page">
+    <main class="container main">
       <router-view />
     </main>
   </div>
@@ -10,6 +10,7 @@
 <script>
 import firebase from 'firebase';
 import Navbar from './components/Navbar/Navbar';
+
 export default {
   name: 'app',
   data: function() {
@@ -41,7 +42,7 @@ body {
   background-color: #fafafa;
 }
 
-.main-page {
+.main {
   margin-top: 92px;
 }
 </style>

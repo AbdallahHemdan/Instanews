@@ -1,32 +1,42 @@
 <template>
-  <div class="login-container">
+  <div class="login">
     <div class="container auth-container">
       <div class="row">
         <left-auth></left-auth>
+
         <div class="right-col text-center">
-          <a href="/" class="header-link">
-            <h2 class="header">Instanews</h2>
-          </a>
-          <p class="info">
-            Log In into Instanews to see photos and videos from your friends.
-          </p>
-          <button type="button" class="btn btn-primary btn-block social-btn">
-            <span class="fa fa-facebook brand-logo"></span>
-            Login with facebook
-          </button>
-          <button type="button" class="btn btn-dark btn-block social-btn">
-            <span class="fa fa-github brand-logo"></span>
-            Login with github
-          </button>
-          <button type="button" class="btn btn-danger btn-block social-btn">
-            <span class="fa fa-google brand-logo"></span>
-            Login with google
-          </button>
+          <div class="header">
+            <a href="/" class="header__link">
+              <h2 class="header__title">Instanews</h2>
+            </a>
+
+            <p class="header__info">
+              Log In into Instanews to see photos and videos from your friends.
+            </p>
+          </div>
+
+          <div class="social">
+            <button type="button" class="btn btn-primary btn-block social__btn">
+              <span class="fa fa-facebook social__logo"></span>
+              Login with facebook
+            </button>
+            <button type="button" class="btn btn-dark btn-block social__btn">
+              <span class="fa fa-github social__logo"></span>
+              Login with github
+            </button>
+            <button type="button" class="btn btn-danger btn-block social__btn">
+              <span class="fa fa-google social__logo"></span>
+              Login with google
+            </button>
+          </div>
+
           <or-divider></or-divider>
+
           <div class="alert alert-danger err-msg" role="alert" v-show="this.errMessage">
             {{ this.errMessage }}
           </div>
-          <form action="">
+
+          <form>
             <div class="form-label-group">
               <input
                 type="text"
@@ -36,6 +46,7 @@
                 placeholder="Enter your username"
                 v-model="username"
               />
+
               <input
                 type="email"
                 name="email"
@@ -45,6 +56,7 @@
                 v-model="email"
               />
             </div>
+
             <div class="form-label-group">
               <input
                 type="password"
@@ -55,6 +67,7 @@
                 v-model="password"
               />
             </div>
+
             <div class="form-label-group">
               <input
                 type="password"
@@ -65,18 +78,23 @@
                 v-model="confirmPassword"
               />
             </div>
-            <div class="ctas">
-              <button type="button" class="btn btn-primary btn-block login-btn" @click="signup">
-                Sign Up
-              </button>
-              <div class="alts">
+
+            <div class="options">
+              <div class="options__first">
+                <button type="button" class="btn btn-primary btn-block auth-btn" @click="signup">
+                  Sign Up
+                </button>
+              </div>
+
+              <div class="options__second">
                 <p class="conditions">
                   By signing up, you agree to <span>our Terms</span>, <span>Data Policy</span> and
                   <span>Cookies Policy</span>
                 </p>
+
                 <div class="have-account">
                   <span>Have an account? </span>
-                  <a href="./login">Log In</a>
+                  <a href="./login" class="have-account__link">Log In</a>
                 </div>
               </div>
             </div>
@@ -186,98 +204,77 @@ export default {
 
 .auth-container {
   margin-top: 20px;
-}
-.right-col {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  width: 400px;
-  float: right;
-  margin: 20px 10px 0px 10px;
-  padding: 40px;
-}
-.header {
-  font-family: 'Pacifico', cursive;
-  font-weight: 300;
-}
 
-.header-link:hover {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.info {
-  font-size: 17px;
-  line-height: 25px;
-  color: #999;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
-.brand-logo {
-  margin-right: 10px;
-}
-
-.divider {
-  border-top: 1px solid #d9dadc;
-  display: block;
-  line-height: 1px;
-  margin: 25px 0;
-  position: relative;
-  text-align: center;
-}
-
-.divider .divider-title {
-  background: #fff;
-  font-size: 12px;
-  letter-spacing: 1px;
-  padding: 0 15px;
-  text-transform: uppercase;
-  color: #999;
-}
-
-.email::placeholder,
-.password::placeholder {
-  color: #555;
-  font-size: 18px;
-  font-weight: 200;
-  opacity: 0.1;
-}
-.field {
-  margin-bottom: 10px;
-}
-
-.have-account {
-  margin-top: 15px;
-}
-.have-account a {
-  padding: 5px;
-}
-
-@media (max-width: 1000px) {
-  .left-col {
-    display: none;
-  }
   .right-col {
-    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 400px;
+    float: right;
+    margin: 20px 10px 0px 10px;
+    padding: 40px;
+
+    @media (max-width: 992px) {
+      margin: 20px auto;
+    }
   }
 }
 
-.login-btn {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 6px;
-}
-.err-message {
-  color: red;
-  font-weight: 400;
-  margin-bottom: -15px;
+.header {
+  &__title {
+    font-family: 'Pacifico', cursive;
+    font-weight: 300;
+  }
+
+  &__link:hover {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  &__info {
+    font-size: 17px;
+    line-height: 25px;
+    color: #999;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
 }
 
-.alert-dismissible {
-  padding-right: 2rem !important;
+.social {
+  &__btn {
+    padding: 5px;
+  }
+
+  &__logo {
+    margin-right: 10px;
+  }
 }
 
-.social-btn {
-  padding: 5px;
+.options {
+  .options__first {
+    .auth-btn {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 6px;
+    }
+  }
+
+  .options__second {
+    .have-account {
+      margin-top: 15px;
+
+      &__link {
+        padding: 5px;
+      }
+    }
+
+    .conditions {
+      color: #8e8e8e;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 .form-control {
@@ -288,14 +285,6 @@ export default {
   line-height: 18px;
   min-height: 40px;
   margin-bottom: 1rem;
-}
-
-.conditions {
-  color: #8e8e8e;
-
-  span {
-    font-weight: 600;
-  }
 }
 
 .err-msg {

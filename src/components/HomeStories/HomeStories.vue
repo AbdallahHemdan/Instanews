@@ -1,20 +1,20 @@
 <template>
   <div class="home__stories">
-    <div class="left-btn" @click="scroll_left">
+    <div class="direc direc--left" @click="scroll_left">
       <img src="./../../assets/left-arrow.png" alt="left arrow" class="arrow" />
     </div>
 
-    <div class="right-btn" @click="scroll_right">
+    <div class="direc direc--right" @click="scroll_right">
       <img src="./../../assets/right-arrow.png" alt="right arrow" class="arrow" />
     </div>
 
-    <div class="home__storiesWrapper">
+    <div class="home__stories-wrapper">
       <div class="home__story" v-for="(story, index) in stories" :key="index">
-        <div class="home__storyImg">
+        <div class="home__story-img">
           <img :src="story.img" :alt="story.name" class="story__img" />
         </div>
 
-        <div class="home__storyOwner">{{ story.name }}</div>
+        <div class="home__story-owner">{{ story.name }}</div>
       </div>
     </div>
   </div>
@@ -30,12 +30,12 @@ export default {
   },
   methods: {
     scroll_left() {
-      let content = document.querySelector('.home__storiesWrapper');
+      let content = document.querySelector('.home__stories-wrapper');
       content.scrollLeft -= 75;
     },
 
     scroll_right() {
-      let content = document.querySelector('.home__storiesWrapper');
+      let content = document.querySelector('.home__stories-wrapper');
       content.scrollLeft += 75;
     },
   },
@@ -58,22 +58,21 @@ export default {
     background-color: #fff;
   }
 
-  .left-btn {
-    position: absolute;
+  .direc {
     top: 36%;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .direc--left {
     left: 16px;
-    cursor: pointer;
   }
 
-  .right-btn {
-    position: absolute;
-    top: 36%;
-    right: 0;
-    cursor: pointer;
-    margin-right: 16px;
+  .direc--right {
+    right: 16px;
   }
 
-  .home__storiesWrapper {
+  .home__stories-wrapper {
     display: flex;
     overflow-x: hidden;
   }
@@ -87,7 +86,7 @@ export default {
     padding-right: 16px;
     max-width: 80px;
 
-    .home__storyImg {
+    .home__story-img {
       margin-bottom: 7px;
 
       .story__img {
@@ -100,7 +99,7 @@ export default {
       }
     }
 
-    .home__storyOwner {
+    .home__storyOwner- {
       color: #8e8e8e;
       font-size: 14px;
     }

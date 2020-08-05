@@ -1,5 +1,5 @@
 <template>
-  <div class="error-404">
+  <div class="error">
     <svg
       aria-hidden="true"
       focusable="false"
@@ -8,7 +8,7 @@
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
-      class="svg-inline--fa fa-ghost fa-w-12 error-img"
+      class="svg-inline--fa fa-ghost fa-w-12 error__img"
       data-v-d5ea9138=""
     >
       <path
@@ -17,12 +17,14 @@
         data-v-d5ea9138=""
       ></path>
     </svg>
-    <div class="back-msg">
-      <h1 class="lost center-text">Are you lost ?</h1>
-      <p class="not-found">Sorry, we couldn't find this page</p>
+
+    <div class="error__message">
+      <h1 class="error__first-message center-text">Are you lost ?</h1>
+      <p class="error__second-message">Sorry, we couldn't find this page</p>
     </div>
-    <div class="back-btn">
-      <button class="back" @click="directToHome">Back to Home</button>
+
+    <div class="error__cta-container">
+      <button class="error__back" @click="directToHome">Back to Home</button>
     </div>
   </div>
 </template>
@@ -43,62 +45,53 @@ body {
   padding: 0;
   margin: 0;
 }
-.error-404 {
+
+.error {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.error-img {
-  max-width: 150px;
-  display: grid;
-  margin: 50px auto 40px;
-  width: 100%;
-  height: auto;
-}
-
-.lost {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 0px;
-  margin-bottom: 4px;
-  color: #007bff;
-}
-
-.not-found {
-  color: #777;
-  text-align: center;
-}
-
-.back-btn {
-  margin: 4rem auto 0;
-  text-align: center;
-}
-
-.error-404 {
   margin-top: 100px;
   color: #007bff;
-}
 
-.bck {
-  display: grid;
-  margin-left: 4%;
-}
+  &__img {
+    max-width: 150px;
+    display: grid;
+    margin: 50px auto 40px;
+    width: 100%;
+    height: auto;
 
-@media (max-width: 48em) {
-  .error-img {
-    max-width: 100px;
+    @media (max-width: 48em) {
+      max-width: 100px;
+    }
   }
-}
 
-.back {
-  border: 1px solid transparent;
-  background-color: #007bff;
-  border-radius: 6px;
-  color: #fff;
-  font-weight: 600;
-  padding: 5px 15px;
-  font-size: 20px;
+  &__first-message {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    color: #007bff;
+  }
+
+  &__second-message {
+    color: #777;
+    text-align: center;
+  }
+
+  &__cta-container {
+    margin: 4rem auto 0;
+    text-align: center;
+  }
+
+  &__back {
+    border: 1px solid transparent;
+    background-color: #007bff;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 15px;
+    font-size: 20px;
+  }
 }
 </style>

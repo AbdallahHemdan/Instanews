@@ -1,10 +1,11 @@
 <template>
-  <div class="chat-container">
+  <div class="chat">
     <div class="row">
-      <div class="my-messages">
+      <div class="chat__messages-list">
         <messages-container></messages-container>
       </div>
-      <div class="actual-chat">
+
+      <div class="chat__message">
         <inbox-container></inbox-container>
       </div>
     </div>
@@ -33,26 +34,26 @@ body {
   padding: 0;
 }
 
-.chat-container {
+.chat {
   background-color: #fff;
   height: 87vh;
   border: 1px solid #ccc;
   border-radius: 4px;
 
-  .my-messages {
+  &__messages-list {
     width: 34%;
   }
 
-  .actual-chat {
+  &__message {
     width: 66%;
   }
 
   @media (max-width: 992px) {
-    .my-messages {
+    &__messages-list {
       width: 20%;
     }
 
-    .actual-chat {
+    &__message {
       width: 80%;
     }
   }
