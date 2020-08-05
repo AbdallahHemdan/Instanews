@@ -14,16 +14,25 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import('./../views/Login.vue'),
+    meta: {
+      hideNavbar: true,
+    },
   },
   {
     path: '/signup',
     name: 'Signup',
     component: () => import('./../views/Signup.vue'),
+    meta: {
+      hideNavbar: true,
+    },
   },
   {
     path: '/forget',
     name: 'ForgetPassword',
     component: () => import('./../views/ForgetPassword.vue'),
+    meta: {
+      hideNavbar: true,
+    },
   },
   {
     path: '/profile',
