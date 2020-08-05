@@ -1,14 +1,15 @@
 <template>
-  <div class="user-info-container">
+  <div class="user-info">
     <img
       src="./../../assets/me.jpg"
       alt="Hemdan's profile image"
-      class="user-img"
+      class="user-info__img"
       draggable="false"
     />
+
     <div class="user-names">
-      <div class="username">Abdallah Hemdan</div>
-      <span class="sub-name">Abdallah_Ahmed_Hemdan</span>
+      <div class="user-info__username">Abdallah Hemdan</div>
+      <span class="user-info__sub-name">Abdallah_Ahmed_Hemdan</span>
     </div>
   </div>
 </template>
@@ -20,34 +21,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.user-info-container {
+.user-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
 
-.usernames {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  &__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    padding: 2px;
+    margin-right: 15px;
+  }
 
-.username {
-  font-size: 1rem;
-  font-weight: 600;
-}
+  &__username {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 
-.sub-name {
-  font-size: 0.8rem;
-  color: #999;
-}
-.user-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid #ccc;
-  padding: 2px;
-  margin-right: 15px;
+  &__sub-name {
+    font-size: 0.8rem;
+    color: #999;
+  }
 }
 </style>

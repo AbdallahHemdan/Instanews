@@ -1,14 +1,21 @@
 <template>
-  <div class="single-suggestion">
-    <div class="left">
-      <img :src="user.userImg" :alt="user.username" class="userImg" draggable="false" />
-      <div class="user-names">
-        <div class="username">{{ user.username }}</div>
-        <span class="relation">{{ user.suggestionBase }}</span>
+  <div class="suggestion">
+    <div class="suggestion__left">
+      <img
+        :src="user.userImg"
+        :alt="user.username"
+        class="suggestion__user-img"
+        draggable="false"
+      />
+
+      <div class="suggestion__info">
+        <div class="suggestion__username">{{ user.username }}</div>
+        <span class="suggestion__relation">{{ user.suggestionBase }}</span>
       </div>
     </div>
-    <div class="right">
-      <a :href="'/' + user.id" class="follow">Follow</a>
+
+    <div class="suggestion__right">
+      <a :href="'/' + user.id" class="suggestion__follow-link">Follow</a>
     </div>
   </div>
 </template>
@@ -26,39 +33,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.single-suggestion {
+.suggestion {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 0.5rem;
-}
 
-.left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 6rem;
-  margin-right: 134px;
-}
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6rem;
+    margin-right: 134px;
+  }
 
-.userImg {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  margin-right: 1rem;
-}
+  &__relation {
+    color: #8e8e8e;
+    font-size: 80%;
+  }
 
-.follow {
-  text-decoration: none;
-}
+  &__user-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
 
-.relation {
-  color: #8e8e8e;
-  font-size: 80%;
-}
-
-.user-name {
-  display: flex;
-  flex-direction: column;
+  &__follow-link {
+    text-decoration: none;
+  }
 }
 </style>

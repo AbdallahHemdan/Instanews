@@ -1,13 +1,13 @@
 <template>
   <div class="suggestions-header">
-    <div class="title">Suggestions For You</div>
-    <a href="/all-suggestions" class="see-all">See All</a>
+    <div class="suggestions-header__title">Suggestions For You</div>
+    <a href="/all-suggestions" class="suggestions-header__see-all">See All</a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SuggestionHeader',
+  name: 'SuggestionsHeader',
 };
 </script>
 
@@ -19,13 +19,13 @@ export default {
   margin-top: 2rem;
   margin-bottom: 1rem;
 
-  .title {
+  &__title {
     color: #8e8e8e;
     font-weight: 600;
     margin-right: 5rem;
   }
 
-  .see-all {
+  &__see-all {
     text-decoration: none;
     color: #000;
   }

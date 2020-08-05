@@ -34,3 +34,7 @@
 - [x] ~ProfileSuggestion~
 - [x] ~ProfileUpperHeader~
 - [x] ~SingleComment~
+- [x] ~SingleSuggestion~
+- [x] ~SuggestionsHeader~
+- [x] ~UserInfo~
+- [x] ~UserSuggestionItem~

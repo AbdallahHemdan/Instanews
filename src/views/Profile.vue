@@ -175,6 +175,7 @@ export default {
 .arrow {
   width: 24px;
   height: 24px;
+  border-radius: 50%;
   z-index: 1500;
   background-color: #fff;
 }
