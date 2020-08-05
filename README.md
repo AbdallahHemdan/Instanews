@@ -189,7 +189,11 @@ Instanews
 
 <h3 align="center">Profile Page</h3>
 
-![image](https://user-images.githubusercontent.com/40190772/89377091-651bbb00-d6f1-11ea-9025-1b776d5b10ad.png)
+![image](https://user-images.githubusercontent.com/40190772/89395231-53e0a780-d70d-11ea-9b11-dca351375676.png)
+
+<hr />
+
+![scroll](https://user-images.githubusercontent.com/40190772/89395396-8d191780-d70d-11ea-8c37-72e5c00f971f.gif)
 
 <hr />
 
@@ -343,6 +347,7 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 - [ ] Create modal for posts (when user click the post the modal popup)
 - [x] ~Create modals for following, followers in profile-page~
 - [x] ~Create modals for see all suggested users~
+- [x] ~Replace scrolling bar in user suggestions section to (left) and (right) arrow~
 - [x] ~Create suggestion component~
 - [ ] Enable CTAs for notifications 
  
