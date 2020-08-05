@@ -199,6 +199,22 @@ Instanews
 
 ![image](https://user-images.githubusercontent.com/40190772/89168652-76dc5180-d57d-11ea-9f32-31267331d900.png)
 
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89388717-b3868500-d704-11ea-8d92-b260862f7779.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89388744-bb462980-d704-11ea-9dcf-57d0590d8146.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89389072-3a3b6200-d705-11ea-8479-ae5250992df1.png)
+
+<hr />
+
+![modals](https://user-images.githubusercontent.com/40190772/89389360-969e8180-d705-11ea-8de3-9fe7d0b38829.gif)
+
 <br />
 
 <h3 align="center">Explore Page</h3>
@@ -321,7 +337,8 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 - [ ] Add Stories section in home-page
 - [ ] Enable uploading stories, write comments, Edit profile
 - [ ] Create modal for posts (when user click the post the modal popup)
-- [ ] Create modals for following, followers in profile-page
+- [x] ~Create modals for following, followers in profile-page~
+- [x] ~Create modals for see all suggested users~
 - [x] ~Create suggestion component~
 - [ ] Enable CTAs for notifications 
  
