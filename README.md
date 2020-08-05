@@ -166,6 +166,10 @@ Instanews
 
 <h3 align="center">Home Page</h3>
 
+![image](https://user-images.githubusercontent.com/40190772/89410445-07ed2d00-d724-11ea-85bc-678a2673f5f3.png)
+
+<hr />
+
 ![image](https://user-images.githubusercontent.com/40190772/89168291-f1f13800-d57c-11ea-899b-d79f57f4df14.png)
 
 <hr />
@@ -342,7 +346,7 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 - [x] ~Handle form validation for (Login - Signup - ForgetPassword)~
 - [ ] Create chat-module for inbox-page
 - [ ] Integrate Search module with firebase
-- [ ] Add Stories section in home-page
+- [x] ~Add Stories section in home-page~
 - [ ] Enable uploading stories, write comments, Edit profile
 - [ ] Create modal for posts (when user click the post the modal popup)
 - [x] ~Create modals for following, followers in profile-page~
