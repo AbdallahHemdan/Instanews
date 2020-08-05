@@ -189,7 +189,7 @@ Instanews
 
 <h3 align="center">Profile Page</h3>
 
-![image](https://user-images.githubusercontent.com/40190772/89168605-64621800-d57d-11ea-92b6-8705aba1fcf1.png)
+![image](https://user-images.githubusercontent.com/40190772/89377091-651bbb00-d6f1-11ea-9025-1b776d5b10ad.png)
 
 <hr />
 
@@ -322,7 +322,7 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 - [ ] Enable uploading stories, write comments, Edit profile
 - [ ] Create modal for posts (when user click the post the modal popup)
 - [ ] Create modals for following, followers in profile-page
-- [ ] Create suggestion component
+- [x] ~Create suggestion component~
 - [ ] Enable CTAs for notifications 
  
 ## License
