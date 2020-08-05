@@ -41,11 +41,6 @@ const routes = [
     component: () => import('./../views/Explore.vue'),
   },
   {
-    path: '/liked',
-    name: 'Liked',
-    component: () => import('./../views/Liked.vue'),
-  },
-  {
     path: '*',
     name: 'NotFound',
     component: () => import('./../views/NotFound.vue'),
