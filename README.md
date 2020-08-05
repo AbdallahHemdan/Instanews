@@ -279,10 +279,13 @@ Instanews
 <h3 align="center">Forget Password Page</h3>
 
 ![image](https://user-images.githubusercontent.com/40190772/89169706-dab34a00-d57e-11ea-99f7-66eaf0cbd7a3.png)
+
 </div>
 
 ### Responsive Screenshots
 
+<div align="center">
+  
 ![image](https://user-images.githubusercontent.com/40190772/89171844-fe2bc400-d581-11ea-8e91-094470386114.png)
 
 <hr />
@@ -305,6 +308,7 @@ Instanews
 
 ![image](https://user-images.githubusercontent.com/40190772/89175323-d4759b80-d587-11ea-8711-75495e08df3f.png)
 
+</div>
 
 
 ## Contributing
