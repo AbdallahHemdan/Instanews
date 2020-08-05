@@ -1,9 +1,10 @@
 <template>
-  <div class="home-container container">
-    <div class="left-content">
+  <div class="home container">
+    <div class="home__left">
+      <home-stories></home-stories>
       <newsfeed></newsfeed>
     </div>
-    <div class="right-content" id="sidebar">
+    <div class="home__right">
       <user-suggestions></user-suggestions>
     </div>
   </div>
@@ -18,30 +19,33 @@ export default {
   components: {
     newsfeed: () => import('./../components/Newsfeed/Newsfeed'),
     'user-suggestions': () => import('./../components/UserSuggestions/UserSuggestions'),
+    'home-stories': () => import('./../components/HomeStories/HomeStories'),
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.left-content {
-  float: left;
-  width: 60%;
-  margin-bottom: 30px;
-}
-
-.right-content {
-  position: fixed;
-  left: 62%;
-  width: 40%;
-}
-
-@media (max-width: 768px) {
-  .left-content {
-    width: 100%;
+.home {
+  &__left {
+    float: left;
+    width: 60%;
+    margin-bottom: 30px;
   }
 
-  .right-content {
-    display: none;
+  &__right {
+    position: fixed;
+    left: 62%;
+    width: 40%;
+  }
+
+  @media (max-width: 768px) {
+    &__left {
+      width: 100%;
+    }
+
+    &__right {
+      display: none;
+    }
   }
 }
 </style>
