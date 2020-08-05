@@ -1,6 +1,6 @@
 <template>
   <div class="col-6 left-col left-auth">
-    <img :src="currentImg" alt="man-break-dancing" class="lft-img" draggable="false" />
+    <img :src="currentImg" alt="man-break-dancing" class="left-auth__img" draggable="false" />
   </div>
 </template>
 
@@ -33,25 +33,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.lft-img {
-  padding-top: 20px;
-  width: 100%;
-  height: auto;
-  float: right;
-  margin: 50px 10px 10px;
-  transition: 1s ease-in-out;
-}
-
-.left-auth {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .left-col {
   @media (max-width: 992px) {
     display: none;
+  }
+
+  .left-auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+      padding-top: 20px;
+      width: 100%;
+      height: auto;
+      float: right;
+      margin: 50px 10px 10px;
+      transition: 1s ease-in-out;
+    }
   }
 }
 </style>

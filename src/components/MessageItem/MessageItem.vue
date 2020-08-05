@@ -1,9 +1,10 @@
 <template>
-  <div class="single-chat">
-    <img :src="message.ownerImg" :alt="message.owner" class="chat-icon" />
-    <div class="usernames">
-      <div class="main-name">{{ message.owner }}</div>
-      <div class="last-msg">
+  <div class="chat-item">
+    <img :src="message.ownerImg" :alt="message.owner" class="chat-item__icon" />
+
+    <div class="chat-item__info">
+      <div class="chat-item__username">{{ message.owner }}</div>
+      <div class="chat-item__last-msg">
         {{ message.lastMessage }} <span class="date">{{ message.lastMessageDate }}</span>
       </div>
     </div>
@@ -23,12 +24,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.single-chat {
+.chat-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
+  cursor: pointer;
 
   &:not(:last-child) {
     border-bottom: 1px solid #ccc;
@@ -38,7 +40,14 @@ export default {
     }
   }
 
-  .chat-icon {
+  @media (max-width: 992px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__icon {
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -49,26 +58,15 @@ export default {
       height: 40px;
     }
   }
-}
 
-@media (max-width: 992px) {
-  .usernames {
-    display: none;
+  &__info {
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 
-  .single-chat {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  &__last-msg {
+    color: #8e8e8e;
   }
-}
-.last-msg {
-  color: #8e8e8e;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
 }
 </style>

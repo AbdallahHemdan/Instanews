@@ -1,14 +1,16 @@
 <template>
-  <div class="follow__item">
-    <img :src="following.img" :alt="following.name + 'image'" class="drop-icon" />
-    <div class="right">
-      <div class="notification-info">
-        <div class="user">{{ following.name }}</div>
-        <div class="nickname">
+  <div class="follow-item">
+    <img :src="following.img" :alt="following.name + 'image'" class="follow-item__icon" />
+
+    <div class="follow-item__right">
+      <div class="follow-item__info">
+        <div class="follow-item__username">{{ following.name }}</div>
+        <div class="follow-item__nickname">
           {{ following.nickName }}
         </div>
       </div>
-      <button class="follow__cta">Follow</button>
+
+      <button class="follow-item__cta">Follow</button>
     </div>
   </div>
 </template>
@@ -26,43 +28,43 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.follow__item {
+.follow-item {
   display: flex;
   align-items: center;
   margin-bottom: 14px;
-}
 
-.notification-info {
-  margin-left: 0.5rem;
-}
+  &__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
 
-.drop-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-}
+  &__right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8px;
+  }
 
-.nickname {
-  font-size: 12px;
-  color: #8e8e8e;
-}
+  &__info {
+    margin-left: 0.5rem;
+  }
 
-.follow__cta {
-  border: 1px solid transparent;
-  background-color: #0095f6;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: 600;
-  padding: 0 16px;
-  font-size: 14px;
-  height: 32px;
-}
+  &__nickname {
+    font-size: 12px;
+    color: #8e8e8e;
+  }
 
-.right {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 8px;
+  &__cta {
+    border: 1px solid transparent;
+    background-color: #0095f6;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 16px;
+    font-size: 14px;
+    height: 32px;
+  }
 }
 </style>

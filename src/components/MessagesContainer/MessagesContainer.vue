@@ -1,19 +1,18 @@
 <template>
-  <div class="messages-container">
-    <div class="header">
-      <div class="title">
+  <div class="messages">
+    <div class="messages__header">
+      <div class="messages__title">
         Direct
       </div>
-      <div class="edit">
-        <img src="./../../assets/svgs/edit.svg" alt="edit icon" class="icon" />
+
+      <div class="messages__edit">
+        <img src="./../../assets/svgs/edit.svg" alt="edit icon" class="messages__icon" />
       </div>
     </div>
-    <div class="list-of-messages">
-      <message-item
-        v-for="(message, index) in messages"
-        :key="index"
-        :message="message"
-      ></message-item>
+
+    <div class="messages__list">
+      <message-item v-for="(message, index) in messages" :key="index" :message="message">
+      </message-item>
     </div>
   </div>
 </template>
@@ -33,15 +32,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.messages-container {
+.messages {
   height: 87vh;
   border-right: 1px solid #ccc;
-}
 
-.header {
-  position: relative;
+  &__header {
+    position: relative;
 
-  .title {
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__title {
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
@@ -49,23 +52,25 @@ export default {
     font-weight: 600;
   }
 
-  .edit {
+  &__edit {
     position: absolute;
     top: 30%;
-    right: 10%;
+    right: 5%;
   }
-  clear: both;
 
-  @media (max-width: 992px) {
-    display: none;
+  &__list {
+    padding: 8px;
+    padding-left: 16px;
+
+    @media (max-width: 992px) {
+      padding-top: 2rem;
+    }
   }
-}
 
-.list-of-messages {
-  padding: 8px;
-  padding-left: 16px;
-  @media (max-width: 992px) {
-    padding-top: 2rem;
+  &__icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
   }
 }
 </style>

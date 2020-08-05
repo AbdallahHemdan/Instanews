@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white insta-nav">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white custom-nav">
     <div class="container">
       <a class="navbar-brand brand-name" href="/">Instanews</a>
       <button
@@ -18,15 +18,16 @@
         <ul class="navbar-nav mr-auto"></ul>
         <form class="form-inline my-2 my-lg-0 mr-auto">
           <input
-            class="search"
+            class="custom-nav__search"
             type="search"
             placeholder="Search Instanews ... "
             aria-label="Search"
           />
         </form>
-        <div class="right-part options-list">
+
+        <div class="right-part custom-nav__options-list">
           <a
-            class="icon"
+            class="custom-nav__icon"
             v-for="(feature, index) in features"
             :key="index"
             :href="feature.href"
@@ -34,6 +35,7 @@
           >
             <img :src="feature.imgSrc" :alt="feature.title" />
           </a>
+
           <notification-dropdown></notification-dropdown>
           <profile-dropdown></profile-dropdown>
         </div>
