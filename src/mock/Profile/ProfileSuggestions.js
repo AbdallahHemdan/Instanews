@@ -39,6 +39,21 @@ const suggestions = [
     name: 'mkbhd',
     nickName: 'Marques Brownlee',
   },
+  {
+    img: require('./../../assets/Suggestions/3.jpg'),
+    name: 'jarvis',
+    nickName: 'Jarvis Johnson',
+  },
+  {
+    img: require('./../../assets/Suggestions/4.jpg'),
+    name: '_steph.js',
+    nickName: 'Steph',
+  },
+  {
+    img: require('./../../assets/Suggestions/5.jpg'),
+    name: 'morgan.codes',
+    nickName: 'Morgan Richardson',
+  },
 ];
 
 export default suggestions;
