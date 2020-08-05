@@ -44,6 +44,7 @@
 
 ### Build with
 - [Vue JS](https://vuejs.org/)
+- [BEM Methodology](http://getbem.com/)
 - [Vuex](https://vuex.vuejs.org/)
 - [Firebase](https://firebase.google.com/?gclid=CjwKCAjwjqT5BRAPEiwAJlBuBXqiYnG_P_iPMJ5MItS8029GlkjKYrJNblDVrp88ZizMxEiPmLc8yxoCnS0QAvD_BwE)
 - [Bootstrap](https://getbootstrap.com/)
@@ -353,6 +354,7 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 - [x] ~Create modals for see all suggested users~
 - [x] ~Replace scrolling bar in user suggestions section to (left) and (right) arrow~
 - [x] ~Create suggestion component~
+- [x] ~Fix naming convension to follow BEM Methodology~
 - [ ] Enable CTAs for notifications 
  
 ## License
