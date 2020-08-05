@@ -21,8 +21,62 @@
     </div>
     <div class="profile-statistics">
       <div class="profile-posts statistics-item"><span class="bold">494</span> posts</div>
-      <div class="profile-followers statistics-item"><span class="bold">40.8k</span> followers</div>
-      <div class="profile-following statistics-item"><span class="bold">1,708</span> following</div>
+      <div class="profile-followers statistics-item" data-toggle="modal" data-target="#following">
+        <span class="bold">40.8k</span> followers
+      </div>
+      <div
+        class="modal fade"
+        id="following"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal__header">
+              <div class="modal__title">Followers</div>
+              <div class="modal__close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </div>
+            </div>
+            <div class="modal-body">
+              <follow-item
+                v-for="(following, index) in listOfFollowers"
+                :key="index"
+                :following="following"
+              ></follow-item>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-following statistics-item" data-toggle="modal" data-target="#followers">
+        <span class="bold">1,708</span> following
+      </div>
+      <div
+        class="modal fade"
+        id="followers"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal__header">
+              <div class="modal__title">Following</div>
+              <div class="modal__close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </div>
+            </div>
+            <div class="modal-body">
+              <follow-item
+                v-for="(following, index) in listOfFollowing"
+                :key="index"
+                :following="following"
+              ></follow-item>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -30,6 +84,15 @@
 <script>
 export default {
   name: 'ProfileHeaderTitle',
+  data: function() {
+    return {
+      listOfFollowers: require('./../../mock/Profile/ListOfFollowers').default,
+      listOfFollowing: require('./../../mock/Profile/ListOfFollowers').default,
+    };
+  },
+  components: {
+    'follow-item': () => import('./../FollowItem/FollowItem'),
+  },
 };
 </script>
 
@@ -137,5 +200,48 @@ export default {
 .arrow-icon {
   width: 10px;
   height: 10px;
+}
+
+.profile-followers {
+  cursor: pointer;
+}
+
+.modal__header {
+  display: flex;
+  border-bottom: 1px solid #dbdbdb;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 14px;
+}
+
+.modal-content {
+  border-radius: 12px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.modal__close {
+  position: absolute;
+  right: 24px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-weight: 600;
+}
+
+.modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.profile-following {
+  cursor: pointer;
 }
 </style>
