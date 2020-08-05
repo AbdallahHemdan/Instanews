@@ -166,6 +166,10 @@ Instanews
 
 <h3 align="center">Home Page</h3>
 
+![image](https://user-images.githubusercontent.com/40190772/89410445-07ed2d00-d724-11ea-85bc-678a2673f5f3.png)
+
+<hr />
+
 ![image](https://user-images.githubusercontent.com/40190772/89168291-f1f13800-d57c-11ea-899b-d79f57f4df14.png)
 
 <hr />
@@ -189,7 +193,11 @@ Instanews
 
 <h3 align="center">Profile Page</h3>
 
-![image](https://user-images.githubusercontent.com/40190772/89377091-651bbb00-d6f1-11ea-9025-1b776d5b10ad.png)
+![image](https://user-images.githubusercontent.com/40190772/89395231-53e0a780-d70d-11ea-9b11-dca351375676.png)
+
+<hr />
+
+![scroll](https://user-images.githubusercontent.com/40190772/89395396-8d191780-d70d-11ea-8c37-72e5c00f971f.gif)
 
 <hr />
 
@@ -198,6 +206,22 @@ Instanews
 <hr />
 
 ![image](https://user-images.githubusercontent.com/40190772/89168652-76dc5180-d57d-11ea-9f32-31267331d900.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89388717-b3868500-d704-11ea-8d92-b260862f7779.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89388744-bb462980-d704-11ea-9dcf-57d0590d8146.png)
+
+<hr />
+
+![image](https://user-images.githubusercontent.com/40190772/89389072-3a3b6200-d705-11ea-8479-ae5250992df1.png)
+
+<hr />
+
+![modals](https://user-images.githubusercontent.com/40190772/89389360-969e8180-d705-11ea-8de3-9fe7d0b38829.gif)
 
 <br />
 
@@ -263,10 +287,13 @@ Instanews
 <h3 align="center">Forget Password Page</h3>
 
 ![image](https://user-images.githubusercontent.com/40190772/89169706-dab34a00-d57e-11ea-99f7-66eaf0cbd7a3.png)
+
 </div>
 
 ### Responsive Screenshots
 
+<div align="center">
+  
 ![image](https://user-images.githubusercontent.com/40190772/89171844-fe2bc400-d581-11ea-8e91-094470386114.png)
 
 <hr />
@@ -289,6 +316,7 @@ Instanews
 
 ![image](https://user-images.githubusercontent.com/40190772/89175323-d4759b80-d587-11ea-8711-75495e08df3f.png)
 
+</div>
 
 
 ## Contributing
@@ -318,10 +346,12 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 - [x] ~Handle form validation for (Login - Signup - ForgetPassword)~
 - [ ] Create chat-module for inbox-page
 - [ ] Integrate Search module with firebase
-- [ ] Add Stories section in home-page
+- [x] ~Add Stories section in home-page~
 - [ ] Enable uploading stories, write comments, Edit profile
 - [ ] Create modal for posts (when user click the post the modal popup)
-- [ ] Create modals for following, followers in profile-page
+- [x] ~Create modals for following, followers in profile-page~
+- [x] ~Create modals for see all suggested users~
+- [x] ~Replace scrolling bar in user suggestions section to (left) and (right) arrow~
 - [x] ~Create suggestion component~
 - [ ] Enable CTAs for notifications 
  
