@@ -1,16 +1,19 @@
 <template>
-  <div class="full-description">
-    <h1 class="username">mayuko</h1>
+  <div class="profile-desc">
+    <h1 class="profile-desc__username">mayuko</h1>
+
     <ul>
       <li>🏠 Born in San Diego, CA</li>
       <li>📹 Tech, Career, Lifestyle</li>
       <li>🖥 Making Internet things (videos, iOS apps)</li>
       <li>💖 Compassion, Inclusivity, Chill vibes</li>
-      <li class="website-link">
+
+      <li class="profile-desc__link">
         <a href="https://www.hellomayuko.com/">hellomayuko.com</a>
       </li>
     </ul>
-    <div class="friends-follow">
+
+    <div class="profile-desc__friends-follow">
       Followed by
       <span> <a href="/">abdallah_hemdan</a> </span>, <span><a href="/">omar_ahmed</a></span>
     </div>
@@ -24,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.full-description {
+.profile-desc {
   padding-left: 0.5rem;
   padding-top: 2rem;
 
@@ -40,23 +43,18 @@ export default {
     padding-left: 1rem;
   }
 
-  .username {
+  &__username {
     font-size: 1rem;
   }
 
-  ul {
-    list-style: none;
-    padding-left: 0;
-
-    .website-link {
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 0.5rem;
-      padding-left: 0.5rem;
-    }
+  &__link > a {
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
   }
 
-  .friends-follow {
+  &__friends-follow {
     color: #999;
     padding-left: 0.5rem;
 
@@ -69,6 +67,11 @@ export default {
         color: #444;
       }
     }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
   }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <div class="profile-stories-container row">
-    <div class="story-container" v-for="(story, index) in stories" :key="index">
-      <img :src="story.storyImg" :alt="story.storyType" class="story-img" />
-      <div class="story-title">{{ story.storyType }}</div>
+  <div class="profile-stories row">
+    <div class="story" v-for="(story, index) in stories" :key="index">
+      <img :src="story.storyImg" :alt="story.storyType" class="story__img" />
+      <div class="story__title">{{ story.storyType }}</div>
     </div>
   </div>
 </template>
@@ -52,7 +52,7 @@ export default {
 <style lang="scss" scoped>
 @import './../../style/settings.scss';
 
-.profile-stories-container {
+.profile-stories {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -60,7 +60,7 @@ export default {
   margin-top: 2rem;
   margin-bottom: 1rem;
 
-  .story-container {
+  .story {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -72,7 +72,7 @@ export default {
       margin-left: 0;
     }
 
-    .story-img {
+    &__img {
       width: 80px;
       height: 80px;
       border-radius: 50%;
@@ -82,7 +82,7 @@ export default {
       padding: 2px;
     }
 
-    .story-title {
+    &__title {
       color: $main-color;
       font-weight: 400;
     }

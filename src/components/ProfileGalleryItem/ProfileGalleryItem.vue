@@ -13,6 +13,7 @@
           <span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i>
           {{ item.likes }}
         </li>
+
         <li class="gallery-item-comments">
           <span class="visually-hidden">Comments:</span
           ><i class="fa fa-comment" aria-hidden="true"></i> {{ item.comments }}

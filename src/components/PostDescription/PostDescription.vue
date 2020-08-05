@@ -1,5 +1,5 @@
 <template>
-  <div class="post-description-container">
+  <div class="post-description">
     <span>{{ writer }}</span> {{ description }}
     <hr />
   </div>
@@ -22,9 +22,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.post-description-container {
+.post-description {
   padding-left: 1rem;
   padding-right: 1rem;
+
   & > span {
     font-weight: 700;
   }

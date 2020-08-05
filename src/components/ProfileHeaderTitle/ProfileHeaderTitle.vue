@@ -1,29 +1,40 @@
 <template>
   <div class="header">
-    <div class="header-first">
-      <div class="username">hellomayuko</div>
-      <div class="header-actions">
-        <button class="action-btn">Message</button>
-        <button class="action-btn">
+    <div class="header__first">
+      <div class="header__username">hellomayuko</div>
+
+      <div class="header__actions">
+        <button class="header__action-btn">Message</button>
+
+        <button class="header__action-btn">
           <img src="./../../assets/svgs/following.svg" alt="following avatar" class="icon" />
         </button>
-        <button class="action-btn">
+
+        <button class="header__action-btn">
           <img
             src="./../../assets/svgs/dropdown-arrow.svg"
             alt="dropdown-arrow image"
-            class="icon arrow-icon"
+            class="header__arrow-icon"
           />
         </button>
-        <button class="dots-menu" data-toggle="modal" data-target="#exampleModalCenter">
+
+        <button class="header__options-menu" data-toggle="modal" data-target="#exampleModalCenter">
           <span class="dots">●●●</span>
         </button>
       </div>
     </div>
-    <div class="profile-statistics">
-      <div class="profile-posts statistics-item"><span class="bold">494</span> posts</div>
-      <div class="profile-followers statistics-item" data-toggle="modal" data-target="#following">
+
+    <div class="header__second">
+      <div class="profile-posts header__statistics-item"><span class="bold">494</span> posts</div>
+
+      <div
+        class="profile-followers header__statistics-item"
+        data-toggle="modal"
+        data-target="#following"
+      >
         <span class="bold">40.8k</span> followers
       </div>
+
       <div
         class="modal fade"
         id="following"
@@ -39,6 +50,7 @@
                 <span aria-hidden="true">&times;</span>
               </div>
             </div>
+
             <div class="modal-body">
               <follow-item
                 v-for="(following, index) in listOfFollowers"
@@ -49,9 +61,15 @@
           </div>
         </div>
       </div>
-      <div class="profile-following statistics-item" data-toggle="modal" data-target="#followers">
+
+      <div
+        class="profile-following header__statistics-item"
+        data-toggle="modal"
+        data-target="#followers"
+      >
         <span class="bold">1,708</span> following
       </div>
+
       <div
         class="modal fade"
         id="followers"
@@ -63,10 +81,12 @@
           <div class="modal-content">
             <div class="modal__header">
               <div class="modal__title">Following</div>
+
               <div class="modal__close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </div>
             </div>
+
             <div class="modal-body">
               <follow-item
                 v-for="(following, index) in listOfFollowing"
@@ -108,34 +128,21 @@ export default {
     padding-left: 0;
     margin-top: 1rem;
   }
-}
 
-.header {
-  padding-left: 0.5rem;
+  &__first {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-  @media (max-width: 768px) {
-    padding-left: 1.5rem;
+    @media (max-width: 576px) {
+      justify-content: center;
+    }
+    @media (max-width: 420px) {
+      flex-direction: column;
+    }
   }
 
-  @media (max-width: 576px) {
-    padding-left: 0;
-    margin-top: 1rem;
-  }
-}
-
-.header-first {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  @media (max-width: 576px) {
-    justify-content: center;
-  }
-  @media (max-width: 420px) {
-    flex-direction: column;
-  }
-
-  .username {
+  &__username {
     font-size: 28px;
     font-weight: 300;
     margin-right: 1rem;
@@ -145,29 +152,51 @@ export default {
       margin-bottom: 1rem;
     }
   }
-}
 
-.action-btn {
-  border: 1px solid #dbdbdb;
-  padding: 4px 16px;
-  background-color: transparent;
-  margin-right: 0.5rem;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 14px;
+  &__action-btn {
+    border: 1px solid #dbdbdb;
+    padding: 4px 16px;
+    background-color: transparent;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
 
-  @media (max-width: 768px) {
-    padding: 4px 12px;
+    @media (max-width: 768px) {
+      padding: 4px 12px;
+    }
   }
-}
 
-.profile-statistics {
-  display: flex;
-  margin-top: 1rem;
+  &__second {
+    display: flex;
+    margin-top: 1rem;
 
-  @media (max-width: 576px) {
-    margin-top: 0.5rem;
-    justify-content: center;
+    @media (max-width: 576px) {
+      margin-top: 0.5rem;
+      justify-content: center;
+    }
+  }
+
+  &__arrow-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__options-menu {
+    border: none;
+    background-color: transparent;
+  }
+
+  &__statistics-item {
+    margin-right: 2rem;
+
+    @media (max-width: 768px) {
+      margin-right: 1rem;
+    }
+
+    @media (max-width: 420px) {
+      margin-right: 0.5rem;
+    }
   }
 }
 
@@ -175,33 +204,12 @@ export default {
   font-weight: 600;
 }
 
-.statistics-item {
-  margin-right: 2rem;
-
-  @media (max-width: 768px) {
-    margin-right: 1rem;
-  }
-
-  @media (max-width: 420px) {
-    margin-right: 0.5rem;
-  }
-}
-
-.dots-menu {
-  border: none;
-  background-color: transparent;
-}
-
 .icon {
   width: 16px;
   height: 16px;
 }
 
-.arrow-icon {
-  width: 10px;
-  height: 10px;
-}
-
+.profile-following,
 .profile-followers {
   cursor: pointer;
 }
@@ -239,9 +247,5 @@ export default {
   flex: 1 1 auto;
   padding: 1rem;
   overflow-y: auto;
-}
-
-.profile-following {
-  cursor: pointer;
 }
 </style>

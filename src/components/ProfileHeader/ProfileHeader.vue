@@ -1,5 +1,5 @@
 <template>
-  <div class="post-header-container">
+  <div class="post-header">
     <profile-upper-header></profile-upper-header>
   </div>
 </template>

@@ -21,3 +21,16 @@
 - [x] ~ProfileDropdown~
 - [x] ~Navbar~
 - [x] ~Newsfeed~
+- [x] ~NotificationItem~
+- [x] ~NotificationsDropdown~
+- [x] ~OrDivider~
+- [x] ~Post~
+- [x] ~PostAction~
+- [x] ~PostDescription~
+- [x] ~ProfileDescription~
+- [x] ~ProfileHeader~
+- [x] ~ProfileHeaderTitle~
+- [x] ~ProfileStories~
+- [x] ~ProfileSuggestion~
+- [x] ~ProfileUpperHeader~
+- [x] ~SingleComment~

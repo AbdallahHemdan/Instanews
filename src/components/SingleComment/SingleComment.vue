@@ -1,12 +1,13 @@
 <template>
-  <div class="comment-container">
-    <div class="comment">
-      <a href="/"
-        ><span>{{ comment.commenter }}</span></a
-      >
+  <div class="comment">
+    <div class="comment__content">
+      <a href="/">
+        <span>{{ comment.commenter }}</span>
+      </a>
       {{ comment.comment }}
     </div>
-    <div class="like-action">
+
+    <div class="comment__like-action">
       <a class="like-post">
         <img :src="likedImg" class="icon" @click="changeLikeState" draggable="false" />
       </a>
@@ -16,7 +17,7 @@
 
 <script>
 export default {
-  name: 'Comment',
+  name: 'SingleComment',
   data: function() {
     return {
       liked: false,
@@ -44,12 +45,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.comment-container {
+.comment {
   padding-bottom: 0.5rem;
   color: #0a0a0a;
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
+
+  &__like-action {
+    padding-left: 5px;
+  }
+
   span {
     font-weight: 600;
     color: #000;
@@ -64,9 +70,5 @@ export default {
 .icon {
   width: 16px;
   height: 16px;
-}
-
-.like-action {
-  padding-left: 5px;
 }
 </style>

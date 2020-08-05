@@ -53,7 +53,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'ProfileSuggestion',
+};
 </script>
 
 <style lang="scss" scoped></style>
