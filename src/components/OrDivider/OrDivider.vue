@@ -1,11 +1,13 @@
 <template>
   <div class="divider">
-    <strong class="divider-title">or</strong>
+    <strong class="divider__title">or</strong>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'OrDivider',
+};
 </script>
 
 <style lang="scss" scoped>
@@ -16,14 +18,14 @@ export default {};
   margin: 25px 0;
   position: relative;
   text-align: center;
-}
 
-.divider .divider-title {
-  background: #fff;
-  font-size: 12px;
-  letter-spacing: 1px;
-  padding: 0 15px;
-  text-transform: uppercase;
-  color: #999;
+  &__title {
+    background: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: #999;
+  }
 }
 </style>

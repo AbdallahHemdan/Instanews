@@ -1,19 +1,37 @@
 <template>
-  <div class="interact">
-    <div class="left">
-      <a class="no-btn like-post">
-        <img :src="likedImg" class="icon" @click="changeLikeState" draggable="false" />
+  <div class="post-actions">
+    <div class="post-actions__left">
+      <a class="post-actions__like">
+        <img
+          :src="likedImg"
+          class="post-actions__icon"
+          @click="changeLikeState"
+          draggable="false"
+        />
       </a>
-      <a class="no-btn comment-post">
-        <img src="./../../assets/svgs/comment.svg" alt="comment" class="icon" draggable="false" />
+
+      <a class="post-actions__comment">
+        <img
+          src="./../../assets/svgs/comment.svg"
+          alt="comment"
+          class="post-actions__icon"
+          draggable="false"
+        />
       </a>
-      <a class="no-btn share-post">
-        <img src="./../../assets/svgs/share.svg" alt="share" class="icon" draggable="false" />
+
+      <a class="post-actions__share">
+        <img
+          src="./../../assets/svgs/share.svg"
+          alt="share"
+          class="post-actions__icon"
+          draggable="false"
+        />
       </a>
     </div>
-    <div class="right">
-      <a class="no-btn save-post" @click="changeSaveState">
-        <img :src="savedImg" alt="saved" class="icon" draggable="false" />
+
+    <div class="post-actions__right">
+      <a class="post-actions__save" @click="changeSaveState">
+        <img :src="savedImg" alt="saved" class="post-actions__icon" draggable="false" />
       </a>
     </div>
   </div>
@@ -52,27 +70,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.interact {
+.post-actions {
   display: flex;
   padding: 0.5rem;
   justify-content: space-between;
   align-items: center;
 
-  .left > a {
+  &__left > a {
     padding: 0.5rem;
+    cursor: pointer;
   }
 
-  .right > a {
+  &__right > a {
     padding: 0.5rem;
+    cursor: pointer;
   }
-}
 
-a {
-  cursor: pointer;
-}
-
-.icon {
-  width: 25px;
-  height: 25px;
+  &__icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 </style>

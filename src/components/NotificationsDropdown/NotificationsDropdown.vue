@@ -10,12 +10,14 @@
     >
       <img src="https://img.icons8.com/ios/30/000000/like.png" class="profile-img" alt="profile" />
     </a>
+
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
       <notification-item
         v-for="(notification, index) in notifications"
         :key="index"
         :notification="notification"
-      ></notification-item>
+      >
+      </notification-item>
     </div>
   </div>
 </template>
