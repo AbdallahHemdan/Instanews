@@ -202,6 +202,10 @@ Instanews
 
 <hr />
 
+![dynamic-components](https://user-images.githubusercontent.com/40190772/89670308-45e38000-d8e1-11ea-86f7-048d0c7fabc6.gif)
+
+<hr />
+
 ![image](https://user-images.githubusercontent.com/40190772/89168850-bc008380-d57d-11ea-9316-1f67ca33dd79.png)
 
 <hr />
@@ -355,6 +359,7 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Instan
 - [x] ~Replace scrolling bar in user suggestions section to (left) and (right) arrow~
 - [x] ~Create suggestion component~
 - [x] ~Fix naming convension to follow BEM Methodology~
+- [x] ~Dynamically render `posts` or `tagged` in profile~
 - [ ] Enable CTAs for notifications 
  
 ## License
