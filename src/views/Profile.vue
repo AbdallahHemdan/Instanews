@@ -58,7 +58,19 @@
 
     <hr />
 
-    <profile-gallery></profile-gallery>
+    <div class="gallery-nav">
+      <div class="gallery-nav__posts gallery-nav__type" :class="{ 'active-type': !postsOrTagged }">
+        <div class="nav-cta" @click="setGalleryPosts">
+          <img src="./../assets/grid.png" alt="grid system" class="gallery-nav__icon" /> POSTS
+        </div>
+      </div>
+      <div class="gallery-nav__tagged gallery-nav__type" :class="{ 'active-type': postsOrTagged }">
+        <div class="nav-cta" @click="setGalleryTagged">
+          <img src="./../assets/tag.png" alt="tagged person" class="gallery-nav__icon" /> TAGGED
+        </div>
+      </div>
+    </div>
+    <component :is="type" :items="items"></component>
   </div>
 </template>
 
@@ -68,6 +80,9 @@ export default {
   data: function() {
     return {
       suggestions: require('./../mock/Profile/ProfileSuggestions').default,
+      postsOrTagged: false,
+      galleryPosts: require('./../mock/Profile/ProfileGallery').default,
+      galleryTagged: require('./../mock/Profile/ProfileTagged').default,
     };
   },
   components: {
@@ -86,6 +101,20 @@ export default {
     scroll_right() {
       let content = document.querySelector('.suggestions__items');
       content.scrollLeft += 200;
+    },
+    setGalleryPosts() {
+      this.postsOrTagged = false;
+    },
+    setGalleryTagged() {
+      this.postsOrTagged = true;
+    },
+  },
+  computed: {
+    type: function() {
+      return this.postsOrTagged ? 'profile-gallery' : 'profile-gallery';
+    },
+    items: function() {
+      return this.postsOrTagged ? this.galleryPosts : this.galleryTagged;
     },
   },
 };
@@ -178,5 +207,46 @@ export default {
   border-radius: 50%;
   z-index: 1500;
   background-color: #fff;
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+  }
+
+  &__type {
+    padding-top: 8px;
+    color: #999;
+  }
+}
+
+.nav-cta {
+  border: none;
+  padding: 0px 32px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:active {
+    outline: none;
+  }
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+.active-type {
+  border-top: 1px solid #888;
+  color: #000;
 }
 </style>
