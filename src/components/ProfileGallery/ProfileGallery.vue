@@ -11,9 +11,13 @@
 export default {
   name: 'ProfileGallery',
   data: function() {
-    return {
-      items: require('./../../mock/Profile/ProfileGallery').default,
-    };
+    return {};
+  },
+  props: {
+    items: {
+      type: Array,
+      required: true,
+    },
   },
   components: {
     'gallery-item': () => import('./../ProfileGalleryItem/ProfileGalleryItem'),
