@@ -33,6 +33,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .suggestion {
   display: flex;
   justify-content: flex-start;
@@ -48,7 +50,7 @@ export default {
   }
 
   &__relation {
-    color: #8e8e8e;
+    color: $dark-gray;
     font-size: 80%;
   }
 

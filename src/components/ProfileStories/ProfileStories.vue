@@ -77,7 +77,7 @@ export default {
       height: 80px;
       border-radius: 50%;
       background-color: transparent;
-      border: 2px solid #ccc;
+      border: 2px solid $light-gray;
       margin-bottom: 0.5rem;
       padding: 2px;
     }

@@ -12,6 +12,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .suggestions-header {
   display: flex;
   justify-content: flex-start;
@@ -20,14 +22,14 @@ export default {
   margin-bottom: 1rem;
 
   &__title {
-    color: #8e8e8e;
+    color: $dark-gray;
     font-weight: 600;
     margin-right: 5rem;
   }
 
   &__see-all {
     text-decoration: none;
-    color: #000;
+    color: $black;
   }
 }
 </style>

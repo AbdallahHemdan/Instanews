@@ -25,6 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .left {
   display: flex;
   justify-content: center;
@@ -43,8 +45,8 @@ export default {
     width: 168px;
     height: 168px;
     border-radius: 50%;
-    background-color: #fff;
-    border: 2px solid #ccc;
+    background-color: $white;
+    border: 2px solid $light-gray;
     padding: 4px;
 
     @media (max-width: 768px) {

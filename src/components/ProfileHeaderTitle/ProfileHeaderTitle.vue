@@ -117,6 +117,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .header {
   padding-left: 0.5rem;
 
@@ -154,13 +156,13 @@ export default {
   }
 
   &__action-btn {
-    border: 1px solid #dbdbdb;
-    padding: 4px 16px;
+    border: 1px solid $lighter-gray;
+    padding: 4px $font-size-3x;
     background-color: transparent;
     margin-right: 0.5rem;
     border-radius: 4px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: $font-size-2x;
 
     @media (max-width: 768px) {
       padding: 4px 12px;
@@ -205,8 +207,8 @@ export default {
 }
 
 .icon {
-  width: 16px;
-  height: 16px;
+  width: $font-size-3x;
+  height: $font-size-3x;
 }
 
 .profile-following,
@@ -216,11 +218,11 @@ export default {
 
 .modal__header {
   display: flex;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid $lighter-gray;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 14px;
+  padding: $font-size-2x;
 }
 
 .modal-content {

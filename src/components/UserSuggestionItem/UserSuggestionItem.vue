@@ -40,10 +40,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .suggestions-item {
   height: 200px;
   min-width: 180px;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $lighter-gray;
   padding: 10px;
   border-radius: 4px;
   margin-right: 20px;
@@ -55,7 +57,7 @@ export default {
   }
 
   &__remove {
-    color: #999;
+    color: $dark-gray;
     font-weight: 500;
     cursor: pointer;
   }
@@ -75,7 +77,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: $font-size-2x;
   }
 
   &__name {
@@ -83,15 +85,15 @@ export default {
   }
 
   &__subname {
-    color: #8e8e8e;
+    color: $dark-gray;
   }
 
   &__follow-cta {
     border: 1px solid transparent;
-    background-color: #0095f6;
-    margin-top: 16px;
+    background-color: $main-color;
+    margin-top: $font-size-3x;
     border-radius: 4px;
-    color: #fff;
+    color: $white;
     padding: 3px 40px;
     text-align: center;
   }

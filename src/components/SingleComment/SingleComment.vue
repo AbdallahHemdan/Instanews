@@ -45,9 +45,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .comment {
   padding-bottom: 0.5rem;
-  color: #0a0a0a;
+  color: $black;
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
@@ -58,7 +60,7 @@ export default {
 
   span {
     font-weight: 600;
-    color: #000;
+    color: $black;
   }
 
   a {
@@ -68,7 +70,7 @@ export default {
 }
 
 .icon {
-  width: 16px;
-  height: 16px;
+  width: $font-size-3x;
+  height: $font-size-3x;
 }
 </style>

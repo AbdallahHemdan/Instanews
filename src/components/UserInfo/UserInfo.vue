@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .user-info {
   display: flex;
   justify-content: flex-start;
@@ -31,7 +33,7 @@ export default {
     height: 50px;
     border-radius: 50%;
     background-color: transparent;
-    border: 2px solid #ccc;
+    border: 2px solid $light-gray;
     padding: 2px;
     margin-right: 15px;
   }
@@ -43,7 +45,7 @@ export default {
 
   &__sub-name {
     font-size: 0.8rem;
-    color: #999;
+    color: $dark-gray;
   }
 }
 </style>
