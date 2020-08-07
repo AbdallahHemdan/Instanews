@@ -1,8 +1,38 @@
+// Main Colors
+$white: #fff;
+$black: #000;
+$purple: #e60c7b;
 $main-color: #007bff;
-$brand-fz: 24px;
+$white-smoke: #fafafa;
+$light-gray: #ccc;
+$lighter-gray: #dbdbdb;
+$dark-gray: #999;
+$darker-gray: #666;
 
-body {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
+// Main font-sizes
+$font-size-1x: 12px;
+$font-size-2x: 14px;
+$font-size-3x: 16px;
+$font-size-4x: 18px;
+$font-size-5x: 20px;
+$font-size-6x: 22px;
+$font-size-7x: 24px;
+$font-size-8x: 26px;
+$font-size-9x: 28px;
+$font-size-10x: 30px;
+$font-size-11x: 32px;
+
+// Main spacing
+$spacing-quarter-x: 2px;
+$spacing-half-x: 4px;
+
+$spacing-1x: 8px;
+$spacing-2x: 16px;
+$spacing-3x: 24px;
+$spacing-4x: 32px;
+$spacing-5x: 40px;
+$spacing-6x: 48px;
+$spacing-7x: 56px;
+$spacing-8x: 64px;
+$spacing-9x: 72px;
+$spacing-10x: 80px;

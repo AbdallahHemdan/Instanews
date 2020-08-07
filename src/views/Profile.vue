@@ -121,10 +121,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../style/settings.scss';
+
 .suggestions {
   width: 100%;
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
+  background-color: $white;
+  border: 1px solid $lighter-gray;
   padding: 20px 25px;
   border-radius: 4px;
   position: relative;
@@ -132,16 +134,16 @@ export default {
   .suggestions__header {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: $font-size-2x;
     font-weight: 600;
     margin-bottom: 1rem;
 
     .suggestions__title {
-      color: #8e8e8e;
+      color: $dark-gray;
     }
 
     .suggestions__seeall {
-      color: #0095f6;
+      color: $main-color;
       cursor: pointer;
     }
   }
@@ -157,22 +159,22 @@ export default {
     cursor: pointer;
 
     &--left {
-      left: 16px;
+      left: $font-size-3x;
     }
 
     &--right {
-      right: 16px;
+      right: $font-size-3x;
     }
   }
 }
 
 .modal__header {
   display: flex;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid $lighter-gray;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 14px;
+  padding: $font-size-2x;
 
   .modal__close {
     position: absolute;
@@ -206,24 +208,24 @@ export default {
   height: 24px;
   border-radius: 50%;
   z-index: 1500;
-  background-color: #fff;
+  background-color: $white;
 }
 
 .gallery-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 16px;
+  padding-bottom: $font-size-3x;
 
   &__icon {
-    width: 14px;
-    height: 14px;
+    width: $font-size-2x;
+    height: $font-size-2x;
     margin-right: 8px;
   }
 
   &__type {
     padding-top: 8px;
-    color: #999;
+    color: $dark-gray;
   }
 }
 
@@ -246,7 +248,7 @@ hr {
 }
 
 .active-type {
-  border-top: 1px solid #888;
-  color: #000;
+  border-top: 1px solid $dark-gray;
+  color: $black;
 }
 </style>

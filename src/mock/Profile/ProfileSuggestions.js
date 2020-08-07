@@ -6,7 +6,7 @@ const suggestions = [
   },
   {
     img: require('./../../assets/Suggestions/2.jpg'),
-    name: 'techleadhd',
+    name: 'techlead',
     nickName: 'TechLead',
   },
   {
@@ -21,7 +21,7 @@ const suggestions = [
   },
   {
     img: require('./../../assets/Suggestions/5.jpg'),
-    name: 'morgan.codes',
+    name: 'morgan',
     nickName: 'Morgan Richardson',
   },
   {
@@ -51,7 +51,7 @@ const suggestions = [
   },
   {
     img: require('./../../assets/Suggestions/5.jpg'),
-    name: 'morgan.codes',
+    name: 'morgan',
     nickName: 'Morgan Richardson',
   },
 ];

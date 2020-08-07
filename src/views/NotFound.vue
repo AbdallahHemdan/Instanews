@@ -41,6 +41,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../style/settings.scss';
+
 body {
   padding: 0;
   margin: 0;
@@ -52,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  color: #007bff;
+  color: $main-color;
 
   &__img {
     max-width: 150px;
@@ -71,11 +73,11 @@ body {
     font-size: 40px;
     margin-top: 0px;
     margin-bottom: 4px;
-    color: #007bff;
+    color: $main-color;
   }
 
   &__second-message {
-    color: #777;
+    color: $darker-gray;
     text-align: center;
   }
 
@@ -86,9 +88,9 @@ body {
 
   &__back {
     border: 1px solid transparent;
-    background-color: #007bff;
+    background-color: $main-color;
     border-radius: 6px;
-    color: #fff;
+    color: $white;
     font-weight: 600;
     padding: 5px 15px;
     font-size: 20px;

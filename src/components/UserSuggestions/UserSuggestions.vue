@@ -33,12 +33,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .footer {
   float: left;
   margin-top: 2rem;
   margin-left: 8px;
   font-size: 15px;
-  color: #999;
+  color: $dark-gray;
   text-align: center;
 
   &__link {

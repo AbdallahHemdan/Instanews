@@ -197,6 +197,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../style/settings.scss';
+
 * {
   padding: 0;
   margin: 0;
@@ -206,8 +208,8 @@ export default {
   margin-top: 20px;
 
   .right-col {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: $white;
+    border: 1px solid $lighter-gray;
     width: 400px;
     float: right;
     margin: 20px 10px 0px 10px;
@@ -227,13 +229,13 @@ export default {
 
   &__link:hover {
     text-decoration: none;
-    color: #007bff;
+    color: $main-color;
   }
 
   &__info {
     font-size: 17px;
     line-height: 25px;
-    color: #999;
+    color: $dark-gray;
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
@@ -268,7 +270,7 @@ export default {
     }
 
     .conditions {
-      color: #8e8e8e;
+      color: $dark-gray;
 
       span {
         font-weight: 600;
@@ -278,10 +280,10 @@ export default {
 }
 
 .form-control {
-  background: #fafafa;
+  background: $white-smoke;
   padding: 8px 0 8px 10px;
-  color: #444;
-  font-size: 14px;
+  color: $darker-gray;
+  font-size: $font-size-2x;
   line-height: 18px;
   min-height: 40px;
   margin-bottom: 1rem;

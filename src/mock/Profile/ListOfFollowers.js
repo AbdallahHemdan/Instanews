@@ -6,7 +6,7 @@ const listOfFollowers = [
   },
   {
     img: require('./../../assets/Suggestions/2.jpg'),
-    name: 'techleadhd',
+    name: 'techlead',
     nickName: 'TechLead',
   },
   {
@@ -21,7 +21,7 @@ const listOfFollowers = [
   },
   {
     img: require('./../../assets/Suggestions/5.jpg'),
-    name: 'morgan.codes',
+    name: 'morgan',
     nickName: 'Morgan Richardson',
   },
   {

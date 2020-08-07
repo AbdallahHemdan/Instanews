@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../style/settings.scss';
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -35,9 +37,9 @@ body {
 }
 
 .chat {
-  background-color: #fff;
+  background-color: $white;
   height: 87vh;
-  border: 1px solid #ccc;
+  border: 1px solid $light-gray;
   border-radius: 4px;
 
   &__messages-list {
