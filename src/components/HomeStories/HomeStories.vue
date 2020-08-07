@@ -43,11 +43,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .home__stories {
-  border: 1px solid #dbdbdb;
-  background-color: #fff;
+  border: 1px solid $lighter-gray;
+  background-color: $white;
   margin-bottom: 24px;
-  padding: 16px;
+  padding: $font-size-3x;
   position: relative;
 
   .arrow {
@@ -55,7 +57,7 @@ export default {
     height: 24px;
     border-radius: 50%;
     z-index: 1500;
-    background-color: #fff;
+    background-color: $white;
   }
 
   .direc {
@@ -65,11 +67,11 @@ export default {
   }
 
   .direc--left {
-    left: 16px;
+    left: $font-size-3x;
   }
 
   .direc--right {
-    right: 16px;
+    right: $font-size-3x;
   }
 
   .home__stories-wrapper {
@@ -83,7 +85,7 @@ export default {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-right: 16px;
+    padding-right: $font-size-3x;
     max-width: 80px;
 
     .home__story-img {
@@ -93,15 +95,15 @@ export default {
         width: 56px;
         height: 56px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: $white;
         padding: 2px;
-        border: 2px solid #e60c7b;
+        border: 2px solid $purple;
       }
     }
 
     .home__storyOwner- {
-      color: #8e8e8e;
-      font-size: 14px;
+      color: $dark-gray;
+      font-size: $font-size-2x;
     }
   }
 }

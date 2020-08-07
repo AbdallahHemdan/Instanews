@@ -45,12 +45,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .comments {
   padding-left: 1rem;
 
   &__post-time {
     font-size: 0.8rem;
-    color: #999;
+    color: $dark-gray;
     padding-bottom: 0.5rem;
   }
 
@@ -58,8 +60,8 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #efefef;
-    color: #8e8e8e;
+    border-top: 1px solid $lighter-gray;
+    color: $dark-gray;
     line-height: 18px;
     min-height: 56px;
   }
@@ -75,29 +77,29 @@ export default {
     }
 
     &::-webkit-input-placeholder {
-      color: #999;
+      color: $dark-gray;
     }
 
     &:-moz-placeholder {
       /* Firefox 18- */
-      color: #999;
+      color: $dark-gray;
     }
 
     &::-moz-placeholder {
       /* Firefox 19+ */
-      color: #999;
+      color: $dark-gray;
     }
 
     &:-ms-input-placeholder {
-      color: #999;
+      color: $dark-gray;
     }
   }
 
   &__post-btn {
     border: none;
-    color: #007bff;
+    color: $main-color;
     background-color: transparent;
-    font-size: 16px;
+    font-size: $font-size-3x;
     padding-right: 10px;
     font-weight: 500;
 

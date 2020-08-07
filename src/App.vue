@@ -38,8 +38,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import './style/settings.scss';
+
 body {
-  background-color: #fafafa;
+  background-color: $white-smoke;
 }
 
 .main {

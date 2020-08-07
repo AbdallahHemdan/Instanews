@@ -32,9 +32,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .messages {
   height: 87vh;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid $light-gray;
 
   &__header {
     position: relative;
@@ -47,7 +49,7 @@ export default {
   &__title {
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $light-gray;
     text-align: center;
     font-weight: 600;
   }
@@ -60,7 +62,7 @@ export default {
 
   &__list {
     padding: 8px;
-    padding-left: 16px;
+    padding-left: $font-size-3x;
 
     @media (max-width: 992px) {
       padding-top: 2rem;

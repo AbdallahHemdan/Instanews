@@ -27,6 +27,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .profile-desc {
   padding-left: 0.5rem;
   padding-top: 2rem;
@@ -55,16 +57,16 @@ export default {
   }
 
   &__friends-follow {
-    color: #999;
+    color: $dark-gray;
     padding-left: 0.5rem;
 
     span {
-      color: #444;
+      color: $darker-gray;
       font-weight: 600;
 
       & > a {
         text-decoration: none;
-        color: #444;
+        color: $darker-gray;
       }
     }
   }

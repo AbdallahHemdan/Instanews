@@ -76,35 +76,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .post {
-  background: #fff;
+  background: $white;
   margin-bottom: 60px;
-  border: 1px solid #c9c7c7;
+  border: 1px solid $lighter-gray;
 
   &__upper {
     padding: 10px 15px;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid $lighter-gray;
   }
 
   &__owner-img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 1px solid #ccc;
-    background-color: #ffff;
+    border: 1px solid $light-gray;
+    background-color: $white;
     padding: 1px;
   }
 
   &__owner {
     margin-left: 10px;
-    color: #007bff;
+    color: $main-color;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 2px;
 
     &:hover {
       text-decoration: none;
-      color: #007bff;
+      color: $main-color;
     }
   }
 
@@ -133,7 +135,7 @@ export default {
 .post-modal-choice {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid $lighter-gray;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: transparent;

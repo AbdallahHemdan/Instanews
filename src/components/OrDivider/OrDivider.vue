@@ -11,8 +11,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .divider {
-  border-top: 1px solid #d9dadc;
+  border-top: 1px solid $lighter-gray;
   display: block;
   line-height: 1px;
   margin: 25px 0;
@@ -20,12 +22,12 @@ export default {
   text-align: center;
 
   &__title {
-    background: #fff;
-    font-size: 12px;
+    background: $white;
+    font-size: $font-size-1x;
     letter-spacing: 1px;
     padding: 0 15px;
     text-transform: uppercase;
-    color: #999;
+    color: $dark-gray;
   }
 }
 </style>

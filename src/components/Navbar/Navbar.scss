@@ -1,9 +1,11 @@
+@import './../../style/settings.scss';
+
 .custom-nav {
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid $lighter-gray;
 
   .brand-name {
     color: $main-color;
-    font-size: $brand-fz;
+    font-size: $font-size-6x;
     font-family: 'Pacifico', cursive;
 
     &:hover {
@@ -11,7 +13,7 @@
     }
 
     &:active {
-      color: #666;
+      color: $darker-gray;
     }
   }
 
@@ -45,22 +47,22 @@
 
     &::-webkit-input-placeholder {
       text-align: center;
-      font-size: 14px;
+      font-size: $font-size-2x;
     }
 
     &:-moz-placeholder {
       text-align: center;
-      font-size: 14px;
+      font-size: $font-size-2x;
     }
 
     &::-moz-placeholder {
       text-align: center;
-      font-size: 14px;
+      font-size: $font-size-2x;
     }
 
     &:-ms-input-placeholder {
       text-align: center;
-      font-size: 14px;
+      font-size: $font-size-2x;
     }
 
     &:focus {
@@ -117,7 +119,7 @@
 
 .logout {
   display: flex;
-  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid $lighter-gray;
   & > a {
     justify-content: flex-start;
     align-items: center;

@@ -48,6 +48,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .notification {
   &__icon {
     width: 32px;
@@ -56,7 +58,7 @@ export default {
   }
 
   &__description {
-    font-size: 12px;
+    font-size: $font-size-1x;
   }
 
   &__right {
@@ -70,26 +72,26 @@ export default {
     border-radius: 4px;
     font-weight: 600;
     padding: 2px 9px;
-    font-size: 14px;
+    font-size: $font-size-2x;
 
     &--follow {
       border: 1px solid transparent;
-      background-color: #0095f6;
+      background-color: $main-color;
       border-radius: 4px;
-      color: #fff;
+      color: $white;
       font-weight: 600;
       padding: 2px 9px;
-      font-size: 14px;
+      font-size: $font-size-2x;
     }
 
     &--followed {
-      border: 1px solid #dbdbdb;
+      border: 1px solid $lighter-gray;
       border-radius: 4px;
       background-color: transparent;
-      color: #262626;
+      color: $darker-gray;
       font-weight: 600;
       padding: 2px 9px;
-      font-size: 14px;
+      font-size: $font-size-2x;
     }
   }
 

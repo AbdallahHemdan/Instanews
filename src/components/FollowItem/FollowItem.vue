@@ -28,10 +28,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .follow-item {
   display: flex;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: $font-size-2x;
 
   &__icon {
     width: 36px;
@@ -52,18 +54,18 @@ export default {
   }
 
   &__nickname {
-    font-size: 12px;
-    color: #8e8e8e;
+    font-size: $font-size-1x;
+    color: $dark-gray;
   }
 
   &__cta {
     border: 1px solid transparent;
-    background-color: #0095f6;
+    background-color: $main-color;
     border-radius: 4px;
-    color: #fff;
+    color: $white;
     font-weight: 600;
-    padding: 0 16px;
-    font-size: 14px;
+    padding: 0 $font-size-3x;
+    font-size: $font-size-2x;
     height: 32px;
   }
 }

@@ -24,6 +24,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .chat-item {
   display: flex;
   justify-content: flex-start;
@@ -33,7 +35,7 @@ export default {
   cursor: pointer;
 
   &:not(:last-child) {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $light-gray;
 
     @media (max-width: 992px) {
       border-bottom: none;
@@ -66,7 +68,7 @@ export default {
   }
 
   &__last-msg {
-    color: #8e8e8e;
+    color: $dark-gray;
   }
 }
 </style>

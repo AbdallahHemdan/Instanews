@@ -25,6 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './../../style/settings.scss';
+
 .inbox {
   height: 87vh;
   display: flex;
@@ -49,13 +51,13 @@ export default {
   }
 
   &__sub-title {
-    color: #8e8e8e;
-    font-size: 14px;
+    color: $dark-gray;
+    font-size: $font-size-2x;
   }
 
   &__sent-btn {
-    color: #fff;
-    background-color: #0095f6;
+    color: $white;
+    background-color: $main-color;
     border: 1px solid transparent;
     border-radius: 4px;
     font-weight: 600;
