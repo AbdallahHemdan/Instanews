@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserSuggestionItem.vue Snapshot testing should pass snapshot testing 1`] = `
+<div
+  class="suggestions-item"
+>
+  <div
+    class="suggestions-item__header"
+  >
+    <div
+      class="suggestions-item__remove"
+    >
+      ×
+    </div>
+  </div>
+   
+  <div
+    class="suggestions-item__body"
+  >
+    <div
+      class="suggestions-item__img-container"
+    >
+      <img
+        alt="jomaoppa"
+        class="suggestions-item__img"
+        draggable="false"
+        src=""
+      />
+    </div>
+     
+    <div
+      class="suggestions-item__name"
+    >
+      
+      jomaoppa
+    
+    </div>
+     
+    <div
+      class="suggestions-item__subname"
+    >
+      
+      Joma
+    
+    </div>
+     
+    <button
+      class="suggestions-item__follow-cta"
+    >
+      Follow
+    </button>
+  </div>
+</div>
+`;
