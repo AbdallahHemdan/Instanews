@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileStories.vue Snapshot testing should pass snapshot testing 1`] = `
+<div
+  class="profile-stories row"
+>
+  <div
+    class="story"
+  >
+    <img
+      alt="Tunes"
+      class="story__img"
+      src="https://instagram.fcai19-2.fna.fbcdn.net/v/t51.2885-15/s150x150/71707560_143278756997187_4954273971273726619_n.jpg?_nc_ht=instagram.fcai19-2.fna.fbcdn.net&_nc_ohc=9enQ_--0NiEAX-PrSWg&oh=b52ae838299ad24b24f8a32084d72dd1&oe=5F505948"
+    />
+     
+    <div
+      class="story__title"
+    >
+      Tunes
+    </div>
+  </div>
+  <div
+    class="story"
+  >
+    <img
+      alt="Tech Things"
+      class="story__img"
+      src="https://instagram.fcai19-2.fna.fbcdn.net/v/t51.2885-15/s150x150/73372120_205078993821310_2769530515492845343_n.jpg?_nc_ht=instagram.fcai19-2.fna.fbcdn.net&_nc_ohc=fMGWzkMucqsAX8IAWVS&oh=e167fec9c92851284e90f72ab5bcb98a&oe=5F512C02"
+    />
+     
+    <div
+      class="story__title"
+    >
+      Tech Things
+    </div>
+  </div>
+</div>
+`;
