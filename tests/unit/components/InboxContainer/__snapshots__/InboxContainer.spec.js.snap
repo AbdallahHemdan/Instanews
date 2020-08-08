@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InboxContainer.vue Snapshot testing should pass snapshot testing 1`] = `
+<div
+  class="inbox"
+>
+  <div
+    class="inbox__logo"
+  >
+    <img
+      alt="message logo"
+      src="./../../assets/svgs/message.svg"
+    />
+  </div>
+   
+  <div
+    class="inbox__info"
+  >
+    <div
+      class="inbox__main-title"
+    >
+      
+      You Messages
+    
+    </div>
+     
+    <div
+      class="inbox__sub-title"
+    >
+      
+      Send private photos and messages to a friend or group.
+    
+    </div>
+     
+    <button
+      class="inbox__sent-btn"
+    >
+      Send Message
+    </button>
+  </div>
+</div>
+`;
