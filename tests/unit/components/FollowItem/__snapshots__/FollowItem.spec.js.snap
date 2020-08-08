@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FollowItem.vue Snapshot testing should pass snapshot testing 1`] = `
+<div
+  class="follow-item"
+>
+  <img
+    alt="morganimage"
+    class="follow-item__icon"
+    src=""
+  />
+   
+  <div
+    class="follow-item__right"
+  >
+    <div
+      class="follow-item__info"
+    >
+      <div
+        class="follow-item__username"
+      >
+        morgan
+      </div>
+       
+      <div
+        class="follow-item__nickname"
+      >
+        
+        Morgan Richardson
+      
+      </div>
+    </div>
+     
+    <button
+      class="follow-item__cta"
+    >
+      Follow
+    </button>
+  </div>
+</div>
+`;
