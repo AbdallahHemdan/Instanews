@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleSuggestion.vue Snapshot testing should pass snapshot testing 1`] = `
+<div
+  class="suggestion"
+>
+  <div
+    class="suggestion__left"
+  >
+    <img
+      alt="sayedalesawy"
+      class="suggestion__user-img"
+      draggable="false"
+      src=""
+    />
+     
+    <div
+      class="suggestion__info"
+    >
+      <div
+        class="suggestion__username"
+      >
+        sayedalesawy
+      </div>
+       
+      <span
+        class="suggestion__relation"
+      >
+        popular
+      </span>
+    </div>
+  </div>
+   
+  <div
+    class="suggestion__right"
+  >
+    <a
+      class="suggestion__follow-link"
+      href="/1"
+    >
+      Follow
+    </a>
+  </div>
+</div>
+`;
