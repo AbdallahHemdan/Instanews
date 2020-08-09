@@ -43,8 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .home__stories {
   border: 1px solid $lighter-gray;
   background-color: $white;

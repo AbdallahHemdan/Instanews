@@ -48,8 +48,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .notification {
   &__icon {
     width: 32px;

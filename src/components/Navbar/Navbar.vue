@@ -75,6 +75,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
 @import './Navbar.scss';
 </style>

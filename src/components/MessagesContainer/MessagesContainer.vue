@@ -32,8 +32,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .messages {
   height: 87vh;
   border-right: 1px solid $light-gray;
