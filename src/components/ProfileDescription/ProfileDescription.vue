@@ -27,8 +27,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .profile-desc {
   padding-left: 0.5rem;
   padding-top: 2rem;

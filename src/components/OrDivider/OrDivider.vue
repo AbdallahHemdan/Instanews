@@ -11,8 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .divider {
   border-top: 1px solid $lighter-gray;
   display: block;

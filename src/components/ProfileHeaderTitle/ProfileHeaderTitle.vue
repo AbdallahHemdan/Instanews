@@ -117,8 +117,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .header {
   padding-left: 0.5rem;
 

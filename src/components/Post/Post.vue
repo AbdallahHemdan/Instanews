@@ -76,8 +76,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .post {
   background: $white;
   margin-bottom: 60px;
