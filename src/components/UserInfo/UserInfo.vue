@@ -21,8 +21,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .user-info {
   display: flex;
   justify-content: flex-start;

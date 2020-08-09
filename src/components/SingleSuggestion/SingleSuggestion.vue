@@ -33,8 +33,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .suggestion {
   display: flex;
   justify-content: flex-start;

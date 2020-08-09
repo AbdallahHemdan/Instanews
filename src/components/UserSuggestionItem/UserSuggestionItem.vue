@@ -40,8 +40,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .suggestions-item {
   height: 200px;
   min-width: 180px;

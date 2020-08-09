@@ -45,8 +45,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .comment {
   padding-bottom: 0.5rem;
   color: $black;

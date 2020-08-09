@@ -50,8 +50,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .profile-stories {
   display: flex;
   flex-direction: row;

@@ -12,8 +12,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../../style/settings.scss';
-
 .suggestions-header {
   display: flex;
   justify-content: flex-start;
