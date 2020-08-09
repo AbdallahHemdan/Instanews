@@ -41,8 +41,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../style/settings.scss';
-
 body {
   padding: 0;
   margin: 0;

@@ -23,8 +23,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../style/settings.scss';
-
 body {
   box-sizing: border-box;
   margin: 0;

@@ -121,8 +121,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../style/settings.scss';
-
 .suggestions {
   width: 100%;
   background-color: $white;

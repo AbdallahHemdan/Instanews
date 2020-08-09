@@ -175,8 +175,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../style/settings.scss';
-
 * {
   padding: 0;
   margin: 0;
