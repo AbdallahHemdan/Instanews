@@ -75,6 +75,7 @@ export default {
   .home__stories-wrapper {
     display: flex;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   .home__story {

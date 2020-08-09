@@ -129,26 +129,27 @@ export default {
   border-radius: 4px;
   position: relative;
 
-  .suggestions__header {
+  &__header {
     display: flex;
     justify-content: space-between;
     font-size: $font-size-2x;
     font-weight: 600;
     margin-bottom: 1rem;
 
-    .suggestions__title {
+    &__title {
       color: $dark-gray;
     }
 
-    .suggestions__seeall {
+    &__seeall {
       color: $main-color;
       cursor: pointer;
     }
   }
 
-  .suggestions__items {
+  &__items {
     display: flex;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   .direc {
