@@ -18,7 +18,6 @@
   <img src="https://img.shields.io/github/languages/top/AbdallahHemdan/Instagram" />
   <img src="https://img.shields.io/github/languages/code-size/AbdallahHemdan/Instagram" />
   <img src="https://img.shields.io/github/issues-pr-raw/AbdallahHemdan/Instagram" />
-  [![Visits Badge](https://badges.pufler.dev/visits/AbdallahHemdan/Instanews)](https://badges.pufler.dev)
 
 </div>
 
