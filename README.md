@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/AbdallahHemdan/Qurany" rel="noopener">
+  <a href="https://github.com/AbdallahHemdan/Instanews" rel="noopener">
     
   ![Instanew](https://user-images.githubusercontent.com/40190772/89137940-1f68c200-d53a-11ea-8d71-64e44c486357.png)
   
