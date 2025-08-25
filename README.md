@@ -192,43 +192,6 @@ Instanews
 
 <br />
 
-<h3 align="center">Profile Page</h3>
-
-![image](https://user-images.githubusercontent.com/40190772/89395231-53e0a780-d70d-11ea-9b11-dca351375676.png)
-
-<hr />
-
-![scroll](https://user-images.githubusercontent.com/40190772/89395396-8d191780-d70d-11ea-8c37-72e5c00f971f.gif)
-
-<hr />
-
-![dynamic-components](https://user-images.githubusercontent.com/40190772/89670308-45e38000-d8e1-11ea-86f7-048d0c7fabc6.gif)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89168850-bc008380-d57d-11ea-9316-1f67ca33dd79.png)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89168652-76dc5180-d57d-11ea-9f32-31267331d900.png)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89388717-b3868500-d704-11ea-8d92-b260862f7779.png)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89388744-bb462980-d704-11ea-9dcf-57d0590d8146.png)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89389072-3a3b6200-d705-11ea-8479-ae5250992df1.png)
-
-<hr />
-
-![modals](https://user-images.githubusercontent.com/40190772/89389360-969e8180-d705-11ea-8de3-9fe7d0b38829.gif)
-
-<br />
 
 <h3 align="center">Explore Page</h3>
 
@@ -295,33 +258,6 @@ Instanews
 
 </div>
 
-### Responsive Screenshots
-
-<div align="center">
-  
-![image](https://user-images.githubusercontent.com/40190772/89171844-fe2bc400-d581-11ea-8e91-094470386114.png)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89171894-16034800-d582-11ea-9449-0780f98a79d7.png)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89171913-20254680-d582-11ea-961a-bea2cfe6908a.png)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89171956-2e736280-d582-11ea-83af-c8967c8bebde.png)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89172022-434ff600-d582-11ea-8d03-e7c15fc878d9.png)
-
-<hr />
-
-![image](https://user-images.githubusercontent.com/40190772/89175323-d4759b80-d587-11ea-8711-75495e08df3f.png)
-
-</div>
 
 
 ## Contributing
