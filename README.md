@@ -1,10 +1,4 @@
-<p align="center">
-  <a href="https://github.com/AbdallahHemdan/Instanews" rel="noopener">
-    
-  ![Instanew](https://user-images.githubusercontent.com/40190772/89137940-1f68c200-d53a-11ea-8d71-64e44c486357.png)
-  
-  </a>
-</p>
+
 
 <h3 align="center">Instanews</h3>
 <div align="center">
